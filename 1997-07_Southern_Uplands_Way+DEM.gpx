@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.0" xmlns="http://www.topografix.com/GPX/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<metadata>
+  <name>SUW Route</name>
+  <link href="https://suw1997.blogspot.com/">
+    <text>SUW route 1997/text>
+  </link>
+  <desc>333.8 km Hike. Walked by Mike, Veronica & Hannah...</desc>
+</metadata>
 <trk>
   <name>1997-07 Southern Uplands Way</name>
   <wpt lat="55.06821" lon="-4.40382">      <!-- a WAYPOINT: one named place -->
