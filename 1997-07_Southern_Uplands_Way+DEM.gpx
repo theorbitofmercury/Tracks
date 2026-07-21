@@ -11,7 +11,7 @@
   <name>1997-07 Southern Uplands Way</name>
   <wpt lat="55.06821" lon="-4.40382">      <!-- a WAYPOINT: one named place -->
     <name>White Laggan Bothy</name>
-    <sym>Flag, Red</sym> <!-- Displays a red flag icon -->
+    <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
