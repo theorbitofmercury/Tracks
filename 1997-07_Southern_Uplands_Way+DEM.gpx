@@ -2,6 +2,9 @@
 <gpx creator="GPS Visualizer http://www.gpsvisualizer.com/" version="1.0" xmlns="http://www.topografix.com/GPX/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
 <trk>
   <name>1997-07 Southern Uplands Way</name>
+  <wpt lat="55.06821" lon="-4.40382">      <!-- a WAYPOINT: one named place -->
+    <name>White Laggan Bothy</name>
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
