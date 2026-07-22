@@ -47,7 +47,7 @@
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.47353" lon="-3.20165">      <!-- a WAYPOINT: one named place -->
-    <name>Tibbie Shiels Inn</name>
+    <name>Tibbie Shiels Inn Camping</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
