@@ -55,7 +55,7 @@
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.59778 lon="-2.71722">      <!-- a WAYPOINT: one named place -->
-    <name>Melrose YSHA/name>
+    <name>Melrose YSHA</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
