@@ -42,6 +42,10 @@
     <name>Brattleburn Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+  <wpt lat="55.3606" lon="-3.1757">      <!-- a WAYPOINT: one named place -->
+    <name>Over Phawhope Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
