@@ -29,6 +29,10 @@
     <name>Chalk Memorial Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+  <wpt lat="55.368" lon="-3.9258">      <!-- a WAYPOINT: one named place -->
+    <name>Sanquhar</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
