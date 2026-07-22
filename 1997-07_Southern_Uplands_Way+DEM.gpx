@@ -9,6 +9,10 @@
 </metadata>
 <trk>
   <name>1997-07 Southern Uplands Way</name>
+  <wpt lat="54.8450" lon="-5.1243">      <!-- a WAYPOINT: one named place -->
+    <name>START Portpatrick</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <wpt lat="55.007787" lon="-4.780994">      <!-- a WAYPOINT: one named place -->
     <name>Beehive Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
