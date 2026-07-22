@@ -34,7 +34,7 @@
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.397725" lon="-3.779774">      <!-- a WAYPOINT: one named place -->
-    <name>Wanlockhead YHA</name>
+    <name>Wanlockhead SYHA</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
  </wpt>
@@ -51,7 +51,11 @@
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.5925" lon="-3.0567">      <!-- a WAYPOINT: one named place -->
-    <name>Minch Moor Bothy near Traquai</name>
+    <name>Minch Moor Bothy near Traquai</name>  <!-- https://commons.wikimedia.org/wiki/File:Minch_Moor_Bothy_(6902141619).jpg -->
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.59778 lon="-2.71722">      <!-- a WAYPOINT: one named place -->
+    <name>Melrose YSHA/name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
