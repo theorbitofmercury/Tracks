@@ -37,6 +37,11 @@
     <name>Wanlockhead YHA</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+ </wpt>
+  <wpt lat="55.34625" lon="-3.55320">      <!-- a WAYPOINT: one named place -->
+    <name>Brattleburn Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
