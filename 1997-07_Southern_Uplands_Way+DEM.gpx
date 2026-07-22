@@ -50,6 +50,10 @@
     <name>Tibbie Shiels Inn Camping</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+  <wpt lat="55.5925" lon="-3.0567">      <!-- a WAYPOINT: one named place -->
+    <name>Minch Moor Bothy near Traquai</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
