@@ -13,12 +13,16 @@
     <name>Beehive Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
-  <wpt lat="55.0780" lon="-4.5090">      <!-- a WAYPOINT: one named place -->
+   <wpt lat="55.0780" lon="-4.5090">      <!-- a WAYPOINT: one named place -->
     <name>Caldons Campsite Glen Trool</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
    </wpt>
    <wpt lat="55.06821" lon="-4.40382">      <!-- a WAYPOINT: one named place -->
     <name>White Laggan Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.106" lon="-4.165">      <!-- a WAYPOINT: one named place -->
+    <name>St John's Town of Dalry Hotel</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
