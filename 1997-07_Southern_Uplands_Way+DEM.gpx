@@ -25,6 +25,10 @@
     <name>St John's Town of Dalry Hotel</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+  <wpt lat="55.29341" lon="-4.07171">      <!-- a WAYPOINT: one named place -->
+    <name>Chalk Memorial Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
