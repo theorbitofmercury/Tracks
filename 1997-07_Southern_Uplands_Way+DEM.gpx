@@ -13,7 +13,7 @@
     <name>Beehive Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
-  <wpt lat="55.0601" lon="-4.5057">      <!-- a WAYPOINT: one named place -->
+  <wpt lat="55.0780" lon="-4.5090">      <!-- a WAYPOINT: one named place -->
     <name>Caldons Campsite at Glen Trool</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
    </wpt>
