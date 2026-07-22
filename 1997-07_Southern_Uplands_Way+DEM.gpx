@@ -70,7 +70,7 @@
     <name>Longformacus Pickup</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
-  <wpt lat="55.93295" lon="2.36018">      <!-- a WAYPOINT: one named place -->
+  <wpt lat="55.9324" lon="-2.3625">      <!-- a WAYPOINT: one named place -->
     <name>Cockburnspath the END</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
