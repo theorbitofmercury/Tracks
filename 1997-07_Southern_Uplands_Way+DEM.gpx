@@ -55,7 +55,19 @@
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.59778" lon="-2.71722">      <!-- a WAYPOINT: one named place -->
-    <name>Melrose YSHA</name>
+    <name>Melrose SYHA</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.7196" lon="-2.7491">      <!-- a WAYPOINT: one named place -->
+    <name>Lauder Campsite</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.80774" lon="-2.49210">      <!-- a WAYPOINT: one named place -->
+    <name>Longformacus Pickup</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.933" lon="2.360">      <!-- a WAYPOINT: one named place -->
+    <name>Cockburnspath the END</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
