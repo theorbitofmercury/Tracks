@@ -30,7 +30,11 @@
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.368" lon="-3.9258">      <!-- a WAYPOINT: one named place -->
-    <name>Sanquhar</name>
+    <name>Sanquhar Campsite</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.368" lon="-3.9258">      <!-- a WAYPOINT: one named place -->
+    <name>Wanlockhead YHA</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <trkseg>
