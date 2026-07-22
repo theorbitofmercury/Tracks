@@ -54,7 +54,7 @@
     <name>Minch Moor Bothy near Traquai</name>  <!-- https://commons.wikimedia.org/wiki/File:Minch_Moor_Bothy_(6902141619).jpg -->
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
-  <wpt lat="55.59778 lon="-2.71722">      <!-- a WAYPOINT: one named place -->
+  <wpt lat="55.59778" lon="-2.71722">      <!-- a WAYPOINT: one named place -->
     <name>Melrose YSHA</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
