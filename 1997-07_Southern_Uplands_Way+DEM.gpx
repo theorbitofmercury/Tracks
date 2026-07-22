@@ -13,6 +13,10 @@
     <name>White Laggan Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+<wpt lat="55.00296" lon="4.47155">      <!-- a WAYPOINT: one named place -->
+    <name>Beehive Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
