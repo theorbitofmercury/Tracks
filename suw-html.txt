@@ -1,0 +1,3910 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
+    <b:include data='blog' name='all-head-content'/>
+    <title><data:blog.pageTitle/></title>
+
+    <b:skin><![CDATA[/*-----------------------------------------------
+
+Blogger Template Style
+Name:     Picture Window
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   <Variable name="keycolor" description="Main Color" type="color" default="#1a222a" value="#1a222a"/>
+   <Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center" value="#111111 url(//themes.googleusercontent.com/image?id=1OACCYOE0-eoTRTfsBuX1NMN9nz599ufI1Jh0CggPFA_sK80AGkIr8pLtYRpNUKPmwtEa) repeat-x fixed top center"/>
+
+   <Group description="Page Text" selector="body">
+     <Variable name="body.font" description="Font" type="font"
+         default="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="body.text.color" description="Text Color" type="color" default="#333333" value="#333333"/>
+   </Group>
+
+   <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+     <Variable name="body.background.color" description="Outer Background" type="color" default="#296695" value="#111111"/>
+     <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="transparent"/>
+     <Variable name="post.background.color" description="Post Background" type="color" default="#ffffff" value="#ffffff"/>
+   </Group>
+
+   <Group description="Links" selector=".main-outer">
+     <Variable name="link.color" description="Link Color" type="color" default="#336699" value="#336699"/>
+     <Variable name="link.visited.color" description="Visited Color" type="color" default="#6699cc" value="#6699cc"/>
+     <Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff" value="#33aaff"/>
+   </Group>
+
+   <Group description="Blog Title" selector=".header h1">
+     <Variable name="header.font" description="Title Font" type="font"
+         default="normal normal 36px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 36px Rock Salt"/>
+     <Variable name="header.text.color" description="Text Color" type="color" default="#ffffff"  value="#ffffff"/>
+   </Group>
+
+   <Group description="Tabs Text" selector=".tabs-inner .widget li a">
+     <Variable name="tabs.font" description="Font" type="font"
+         default="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 15px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="tabs.text.color" description="Text Color" type="color" default="#ffffff" value="#ffffff"/>
+     <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="$(link.color)" value="#336699"/>
+   </Group>
+
+   <Group description="Tabs Background" selector=".tabs-outer .PageList">
+     <Variable name="tabs.background.color" description="Background Color" type="color" default="transparent" value="transparent"/>
+     <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent" value="transparent"/>
+     <Variable name="tabs.separator.color" description="Separator Color" type="color" default="transparent" value="transparent"/>
+   </Group>
+
+   <Group description="Post Title" selector="h3.post-title, .comments h4">
+     <Variable name="post.title.font" description="Title Font" type="font"
+         default="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+   </Group>
+
+   <Group description="Date Header" selector=".date-header">
+     <Variable name="date.header.color" description="Text Color" type="color" default="$(body.text.color)" value="#333333"/>
+   </Group>
+
+   <Group description="Post" selector=".post">
+     <Variable name="post.footer.text.color" description="Footer Text Color" type="color" default="#999999" value="#999999"/>
+     <Variable name="post.border.color" description="Border Color" type="color" default="#dddddd" value="#dddddd"/>
+   </Group>
+
+   <Group description="Gadgets" selector="h2">
+     <Variable name="widget.title.font" description="Title Font" type="font"
+        default="bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="bold normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+     <Variable name="widget.title.text.color" description="Title Color" type="color" default="#888888" value="#888888"/>
+   </Group>
+
+   <Group description="Footer" selector=".footer-outer">
+     <Variable name="footer.text.color" description="Text Color" type="color" default="#cccccc" value="#cccccc"/>
+     <Variable name="footer.widget.title.text.color" description="Gadget Title Color" type="color" default="#aaaaaa" value="#aaaaaa"/>
+   </Group>
+
+   <Group description="Footer Links" selector=".footer-outer">
+     <Variable name="footer.link.color" description="Link Color" type="color" default="#99ccee" value="#99ccee"/>
+     <Variable name="footer.link.visited.color" description="Visited Color" type="color" default="#77aaee" value="#77aaee"/>
+     <Variable name="footer.link.hover.color" description="Hover Color" type="color" default="#33aaff" value="#33aaff"/>
+   </Group>
+
+   <Variable name="content.margin" description="Content Margin Top" type="length" default="20px" value="20px"/>
+   <Variable name="content.padding" description="Content Padding" type="length" default="0" value="0"/>
+   <Variable name="content.background" description="Content Background" type="background"
+       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
+   <Variable name="content.border.radius" description="Content Border Radius" type="length" default="0" value="0"/>
+   <Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="0" value="0"/>
+
+   <Variable name="header.padding" description="Header Padding" type="length" default="0" value="0"/>
+   <Variable name="header.background.gradient" description="Header Gradient" type="url"
+       default="none" value="none"/>
+   <Variable name="header.border.radius" description="Header Border Radius" type="length" default="0" value="0"/>
+
+   <Variable name="main.border.radius.top" description="Main Border Radius" type="length" default="20px" value="20px"/>
+   <Variable name="footer.border.radius.top" description="Footer Border Radius Top" type="length" default="0" value="0"/>
+   <Variable name="footer.border.radius.bottom" description="Footer Border Radius Bottom" type="length" default="20px" value="20px"/>
+   <Variable name="region.shadow.spread" description="Main and Footer Shadow Spread" type="length" default="3px" value="3px"/>
+   <Variable name="region.shadow.offset" description="Main and Footer Shadow Offset" type="length" default="1px" value="1px"/>
+
+   <Variable name="tabs.background.gradient" description="Tab Background Gradient" type="url" default="none" value="none"/>
+   <Variable name="tab.selected.background.gradient" description="Selected Tab Background" type="url"
+       default="url(//www.blogblog.com/1kt/transparent/white80.png)" value="url(//www.blogblog.com/1kt/transparent/white80.png)"/>
+   <Variable name="tab.background" description="Tab Background" type="background"
+       default="transparent url(//www.blogblog.com/1kt/transparent/black50.png) repeat scroll top left" value="transparent url(//www.blogblog.com/1kt/transparent/black50.png) repeat scroll top left"/>
+
+   <Variable name="tab.border.radius" description="Tab Border Radius" type="length" default="10px"  value="10px"/>
+   <Variable name="tab.first.border.radius" description="First Tab Border Radius" type="length" default="10px"  value="10px"/>
+   <Variable name="tabs.border.radius" description="Tabs Border Radius" type="length" default="0"  value="0"/>
+
+   <Variable name="tabs.spacing" description="Tab Spacing" type="length" default=".25em" value=".25em"/>
+   <Variable name="tabs.margin.bottom" description="Tab Margin Bottom" type="length" default="0" value="0"/>
+   <Variable name="tabs.margin.sides" description="Tab Margin Sides" type="length" default="20px" value="20px"/>
+
+   <Variable name="main.background" description="Main Background" type="background"
+       default="transparent url(//www.blogblog.com/1kt/transparent/white80.png) repeat scroll top left" value="transparent url(//www.blogblog.com/1kt/transparent/white80.png) repeat scroll top left"/>
+   <Variable name="main.padding.sides" description="Main Padding Sides" type="length" default="20px" value="20px"/>
+
+   <Variable name="footer.background" description="Footer Background" type="background"
+       default="transparent url(//www.blogblog.com/1kt/transparent/black50.png) repeat scroll top left" value="transparent url(//www.blogblog.com/1kt/transparent/black50.png) repeat scroll top left"/>
+
+   <Variable name="post.margin.sides" description="Post Margin Sides" type="length" default="-20px" value="-20px"/>
+   <Variable name="post.border.radius" description="Post Border Radius" type="length" default="5px" value="5px"/>
+   <Variable name="widget.title.text.transform" description="Widget Title Text Transform" type="string" default="uppercase" value="uppercase"/>
+
+   <Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
+
+   <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+   <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+
+/* Content
+----------------------------------------------- */
+body {
+  font: $(body.font);
+  color: $(body.text.color);
+  background: $(body.background);
+}
+
+html body .region-inner {
+  min-width: 0;
+  max-width: 100%;
+  width: auto;
+}
+
+.content-outer {
+  font-size: 90%;
+}
+
+a:link {
+  text-decoration:none;
+  color: $(link.color);
+}
+
+a:visited {
+  text-decoration:none;
+  color: $(link.visited.color);
+}
+
+a:hover {
+  text-decoration:underline;
+  color: $(link.hover.color);
+}
+
+.content-outer {
+  background: $(content.background);
+
+  -moz-border-radius: $(content.border.radius);
+  -webkit-border-radius: $(content.border.radius);
+  -goog-ms-border-radius: $(content.border.radius);
+  border-radius: $(content.border.radius);
+
+  -moz-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
+
+  margin: $(content.margin) auto;
+}
+
+.content-inner {
+  padding: $(content.padding);
+}
+
+/* Header
+----------------------------------------------- */
+.header-outer {
+  background: $(header.background.color) $(header.background.gradient) repeat-x scroll top left;
+  _background-image: none;
+
+  color: $(header.text.color);
+
+  -moz-border-radius: $(header.border.radius);
+  -webkit-border-radius: $(header.border.radius);
+  -goog-ms-border-radius: $(header.border.radius);
+  border-radius: $(header.border.radius);
+}
+
+.Header img, .Header #header-inner {
+  -moz-border-radius: $(header.border.radius);
+  -webkit-border-radius: $(header.border.radius);
+  -goog-ms-border-radius: $(header.border.radius);
+  border-radius: $(header.border.radius);
+}
+
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+  padding-left: $(header.padding);
+  padding-right: $(header.padding);
+}
+
+.Header h1 {
+  font: $(header.font);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Header h1 a {
+  color: $(header.text.color);
+}
+
+.Header .description {
+  font-size: 130%;
+}
+
+/* Tabs
+----------------------------------------------- */
+.tabs-inner {
+  margin: .5em $(tabs.margin.sides) $(tabs.margin.bottom);
+  padding: 0;
+}
+
+.tabs-inner .section {
+  margin: 0;
+}
+
+.tabs-inner .widget ul {
+  padding: 0;
+
+  background: $(tabs.background.color) $(tabs.background.gradient) repeat scroll bottom;
+
+  -moz-border-radius: $(tabs.border.radius);
+  -webkit-border-radius: $(tabs.border.radius);
+  -goog-ms-border-radius: $(tabs.border.radius);
+  border-radius: $(tabs.border.radius);
+}
+
+.tabs-inner .widget li {
+  border: none;
+}
+
+.tabs-inner .widget li a {
+  display: inline-block;
+
+  padding: .5em 1em;
+  margin-$endSide: $(tabs.spacing);
+
+  color: $(tabs.text.color);
+  font: $(tabs.font);
+
+  -moz-border-radius: $(tab.border.radius) $(tab.border.radius) 0 0;
+  -webkit-border-top-left-radius: $(tab.border.radius);
+  -webkit-border-top-right-radius: $(tab.border.radius);
+  -goog-ms-border-radius: $(tab.border.radius) $(tab.border.radius) 0 0;
+  border-radius: $(tab.border.radius) $(tab.border.radius) 0 0;
+
+  background: $(tab.background);
+
+  border-$endSide: 1px solid $(tabs.separator.color);
+}
+
+.tabs-inner .widget li:first-child a {
+  padding-$startSide: 1.25em;
+
+  -moz-border-radius-top$startSide: $(tab.first.border.radius);
+  -moz-border-radius-bottom$startSide: $(tabs.border.radius);
+  -webkit-border-top-$startSide-radius: $(tab.first.border.radius);
+  -webkit-border-bottom-$startSide-radius: $(tabs.border.radius);
+  -goog-ms-border-top-$startSide-radius: $(tab.first.border.radius);
+  -goog-ms-border-bottom-$startSide-radius: $(tabs.border.radius);
+  border-top-$startSide-radius: $(tab.first.border.radius);
+  border-bottom-$startSide-radius: $(tabs.border.radius);
+}
+
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+  position: relative;
+  z-index: 1;
+
+  background: $(tabs.selected.background.color) $(tab.selected.background.gradient) repeat scroll bottom;
+  color: $(tabs.selected.text.color);
+
+  -moz-box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 0 $(region.shadow.spread) rgba(0, 0, 0, .15);
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  font: $(widget.title.font);
+  text-transform: $(widget.title.text.transform);
+  color: $(widget.title.text.color);
+  margin: .5em 0;
+}
+
+/* Main
+----------------------------------------------- */
+.main-outer {
+  background: $(main.background);
+
+  -moz-border-radius: $(main.border.radius.top) $(main.border.radius.top) 0 0;
+  -webkit-border-top-left-radius: $(main.border.radius.top);
+  -webkit-border-top-right-radius: $(main.border.radius.top);
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -goog-ms-border-radius: $(main.border.radius.top) $(main.border.radius.top) 0 0;
+  border-radius: $(main.border.radius.top) $(main.border.radius.top) 0 0;
+
+  -moz-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+}
+
+.main-inner {
+  padding: 15px $(main.padding.sides) 20px;
+}
+
+.main-inner .column-center-inner {
+  padding: 0 0;
+}
+
+.main-inner .column-left-inner {
+  padding-left: 0;
+}
+
+.main-inner .column-right-inner {
+  padding-right: 0;
+}
+
+/* Posts
+----------------------------------------------- */
+h3.post-title {
+  margin: 0;
+  font: $(post.title.font);
+}
+
+.comments h4 {
+  margin: 1em 0 0;
+  font: $(post.title.font);
+}
+
+.date-header span {
+  color: $(date.header.color);
+}
+
+.post-outer {
+  background-color: $(post.background.color);
+  border: solid 1px $(post.border.color);
+
+  -moz-border-radius: $(post.border.radius);
+  -webkit-border-radius: $(post.border.radius);
+  border-radius: $(post.border.radius);
+  -goog-ms-border-radius: $(post.border.radius);
+
+  padding: 15px 20px;
+  margin: 0 $(post.margin.sides) 20px;
+}
+
+.post-body {
+  line-height: 1.4;
+  font-size: 110%;
+  position: relative;
+}
+
+.post-header {
+  margin: 0 0 1.5em;
+
+  color: $(post.footer.text.color);
+  line-height: 1.6;
+}
+
+.post-footer {
+  margin: .5em 0 0;
+
+  color: $(post.footer.text.color);
+  line-height: 1.6;
+}
+
+#blog-pager {
+  font-size: 140%
+}
+
+#comments .comment-author {
+  padding-top: 1.5em;
+
+  border-top: dashed 1px #ccc;
+  border-top: dashed 1px rgba(128, 128, 128, .5);
+
+  background-position: 0 1.5em;
+}
+
+#comments .comment-author:first-child {
+  padding-top: 0;
+
+  border-top: none;
+}
+
+.avatar-image-container {
+  margin: .2em 0 0;
+}
+
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+  background-repeat: no-repeat;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+
+.comments .comments-content .loadmore a {
+  border-top: 1px solid $(link.hover.color);
+  border-bottom: 1px solid $(link.hover.color);
+}
+
+.comments .continue {
+  border-top: 2px solid $(link.hover.color);
+}
+
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+  padding: 0;
+  list-style: none;
+}
+
+.widget ul li, .widget #ArchiveList ul.flat li {
+  border-top: dashed 1px #ccc;
+  border-top: dashed 1px rgba(128, 128, 128, .5);
+}
+
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+  border-top: none;
+}
+
+.widget .post-body ul {
+  list-style: disc;
+}
+
+.widget .post-body ul li {
+  border: none;
+}
+
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+  color:$(footer.text.color);
+  background: $(footer.background);
+
+  -moz-border-radius: $(footer.border.radius.top) $(footer.border.radius.top) $(footer.border.radius.bottom) $(footer.border.radius.bottom);
+  -webkit-border-top-left-radius: $(footer.border.radius.top);
+  -webkit-border-top-right-radius: $(footer.border.radius.top);
+  -webkit-border-bottom-left-radius: $(footer.border.radius.bottom);
+  -webkit-border-bottom-right-radius: $(footer.border.radius.bottom);
+  -goog-ms-border-radius: $(footer.border.radius.top) $(footer.border.radius.top) $(footer.border.radius.bottom) $(footer.border.radius.bottom);
+  border-radius: $(footer.border.radius.top) $(footer.border.radius.top) $(footer.border.radius.bottom) $(footer.border.radius.bottom);
+
+  -moz-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -webkit-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  -goog-ms-box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+  box-shadow: 0 $(region.shadow.offset) $(region.shadow.spread) rgba(0, 0, 0, .15);
+}
+
+.footer-inner {
+  padding: 10px $(main.padding.sides) 20px;
+}
+
+.footer-outer a {
+  color: $(footer.link.color);
+}
+
+.footer-outer a:visited {
+  color: $(footer.link.visited.color);
+}
+
+.footer-outer a:hover {
+  color: $(footer.link.hover.color);
+}
+
+.footer-outer .widget h2 {
+  color: $(footer.widget.title.text.color);
+}
+
+/* Mobile
+----------------------------------------------- */
+html body.mobile {
+  height: auto;
+}
+
+html body.mobile {
+  min-height: 480px;
+  background-size: 100% auto;
+}
+
+.mobile .body-fauxcolumn-outer {
+  background: $(mobile.background.overlay);
+}
+
+html .mobile .mobile-date-outer, html .mobile .blog-pager {
+  border-bottom: none;
+  background: $(main.background);
+  margin-bottom: 10px;
+}
+
+.mobile .date-outer {
+  background: $(main.background);
+}
+
+.mobile .header-outer, .mobile .main-outer,
+.mobile .post-outer, .mobile .footer-outer {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -goog-ms-border-radius: 0;
+  border-radius: 0;
+}
+
+.mobile .content-outer,
+.mobile .main-outer,
+.mobile .post-outer {
+  background: inherit;
+  border: none;
+}
+
+.mobile .content-outer {
+  font-size: 100%;
+}
+
+.mobile-link-button {
+  background-color: $(link.color);
+}
+
+.mobile-link-button a:link, .mobile-link-button a:visited {
+  color: $(post.background.color);
+}
+
+.mobile-index-contents {
+  color: $(body.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content {
+  background: $(tabs.selected.background.color) $(tab.selected.background.gradient) repeat scroll bottom;
+  color: $(tabs.selected.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+  border-$startSide: 1px solid $(tabs.separator.color);
+}
+]]></b:skin>
+
+    <b:template-skin>
+      <b:variable default='960px' name='content.width' type='length' value='1200px'/>
+      <b:variable default='0' name='main.column.left.width' type='length' value='180px'/>
+      <b:variable default='310px' name='main.column.right.width' type='length' value='180px'/>
+
+      <![CDATA[
+      body {
+        min-width: $(content.width);
+      }
+
+      .content-outer, .content-fauxcolumn-outer, .region-inner {
+        min-width: $(content.width);
+        max-width: $(content.width);
+        _width: $(content.width);
+      }
+
+      .main-inner .columns {
+        padding-left: $(main.column.left.width);
+        padding-right: $(main.column.right.width);
+      }
+
+      .main-inner .fauxcolumn-center-outer {
+        left: $(main.column.left.width);
+        right: $(main.column.right.width);
+        /* IE6 does not respect left and right together */
+        _width: expression(this.parentNode.offsetWidth -
+            parseInt("$(main.column.left.width)") -
+            parseInt("$(main.column.right.width)") + 'px');
+      }
+
+      .main-inner .fauxcolumn-left-outer {
+        width: $(main.column.left.width);
+      }
+
+      .main-inner .fauxcolumn-right-outer {
+        width: $(main.column.right.width);
+      }
+
+      .main-inner .column-left-outer {
+        width: $(main.column.left.width);
+        right: 100%;
+        margin-left: -$(main.column.left.width);
+      }
+
+      .main-inner .column-right-outer {
+        width: $(main.column.right.width);
+        margin-right: -$(main.column.right.width);
+      }
+
+      #layout {
+        min-width: 0;
+      }
+
+      #layout .content-outer {
+        min-width: 0;
+        width: 800px;
+      }
+
+      #layout .region-inner {
+        min-width: 0;
+        width: auto;
+      }
+
+      body#layout div.add_widget {
+        padding: 8px;
+      }
+
+      body#layout div.add_widget a {
+        margin-left: 32px;
+      }
+      ]]>
+    </b:template-skin>
+
+    <b:if cond='data:skin.vars.body_background.image.isResizable'>
+      <b:include cond='not data:view.isPreview' data='{                          image: data:skin.vars.body_background.image,                          selector: &quot;body&quot;                        }' name='responsiveImageStyle'/>
+    </b:if>
+
+    <b:include data='blog' name='google-analytics'/>
+  </head>
+
+  <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
+  <b:section class='navbar' id='navbar' maxwidgets='1' name='Navbar' showaddelement='no'>
+    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
+      <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener(&#39;load&#39;,
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
+      }
+    }
+  &lt;/script&gt;
+&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+      gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
+        if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: &#39;https://www.blogger.com/navbar/6492557390233336303?origin\x3dhttp://localhost:80&#39;,
+              where: document.getElementById(&quot;navbar-iframe-container&quot;),
+              id: &quot;navbar-iframe&quot;
+          });
+        }
+      });
+    &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+(function() {
+var script = document.createElement(&#39;script&#39;);
+script.type = &#39;text/javascript&#39;;
+script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
+var head = document.getElementsByTagName(&#39;head&#39;)[0];
+if (head) {
+head.appendChild(script);
+}})();
+&lt;/script&gt;
+</b:includable>
+    </b:widget>
+  </b:section>
+
+  <b:if cond='data:blog.pageType == &quot;index&quot;'>
+    <div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
+      <meta expr:content='data:blog.title' itemprop='name'/>
+      <b:if cond='data:blog.metaDescription'>
+        <meta expr:content='data:blog.metaDescription' itemprop='description'/>
+      </b:if>
+    </div>
+  </b:if>
+
+  <div class='body-fauxcolumns'>
+    <div class='fauxcolumn-outer body-fauxcolumn-outer'>
+    <div class='cap-top'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    <div class='fauxborder-left'>
+    <div class='fauxborder-right'/>
+    <div class='fauxcolumn-inner'>
+    </div>
+    </div>
+    <div class='cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+  </div>
+
+  <div class='content'>
+  <div class='content-fauxcolumns'>
+    <div class='fauxcolumn-outer content-fauxcolumn-outer'>
+    <div class='cap-top'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    <div class='fauxborder-left'>
+    <div class='fauxborder-right'/>
+    <div class='fauxcolumn-inner'>
+    </div>
+    </div>
+    <div class='cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+  </div>
+
+  <div class='content-outer'>
+  <div class='content-cap-top cap-top'>
+    <div class='cap-left'/>
+    <div class='cap-right'/>
+  </div>
+  <div class='fauxborder-left content-fauxborder-left'>
+  <div class='fauxborder-right content-fauxborder-right'/>
+  <div class='content-inner'>
+
+    <header>
+    <div class='header-outer'>
+    <div class='header-cap-top cap-top'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    <div class='fauxborder-left header-fauxborder-left'>
+    <div class='fauxborder-right header-fauxborder-right'/>
+    <div class='region-inner header-inner'>
+      <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
+        <b:widget id='Header1' locked='true' title='Southern Uplands Way Walk (Header)' type='Header'>
+          <b:widget-settings>
+            <b:widget-setting name='displayUrl'/>
+            <b:widget-setting name='displayHeight'>0</b:widget-setting>
+            <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+            <b:widget-setting name='useImage'>false</b:widget-setting>
+            <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+            <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+            <b:widget-setting name='displayWidth'>0</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+
+  <b:if cond='data:useImage'>
+    <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
+      <!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      -->
+      <b:if cond='data:mobile'>
+        <div id='header-inner'>
+          <div class='titlewrapper' style='background: transparent'>
+            <h1 class='title' style='background: transparent; border-width: 0px'>
+              <b:include name='title'/>
+            </h1>
+          </div>
+          <b:include name='description'/>
+        </div>
+      <b:else/>
+        <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                      + &quot;background-position: &quot;                      + data:backgroundPositionStyleStr + &quot;; &quot;                      + data:widthStyleStr                      + &quot;min-height: &quot; + data:height                      + &quot;_height: &quot; + data:height                      + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
+          <div class='titlewrapper' style='background: transparent'>
+            <h1 class='title' style='background: transparent; border-width: 0px'>
+              <b:include name='title'/>
+            </h1>
+          </div>
+          <b:include name='description'/>
+        </div>
+      </b:if>
+    <b:else/>
+      <!--Show the image only-->
+      <div id='header-inner'>
+        <a expr:href='data:blog.homepageUrl' style='display: block'>
+          <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+        </a>
+        <!--Show the description-->
+        <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
+          <b:include name='description'/>
+        </b:if>
+      </div>
+    </b:if>
+  <b:else/>
+    <!--No header image -->
+    <div id='header-inner'>
+      <div class='titlewrapper'>
+        <h1 class='title'>
+          <b:include name='title'/>
+        </h1>
+      </div>
+      <b:include name='description'/>
+    </div>
+  </b:if>
+</b:includable>
+          <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+          <b:includable id='title'>
+  <b:tag cond='data:blog.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a'>
+    <data:title/>
+  </b:tag>
+</b:includable>
+        </b:widget>
+      </b:section>
+    </div>
+    </div>
+    <div class='header-cap-bottom cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+    </header>
+
+    <div class='tabs-outer'>
+    <div class='tabs-cap-top cap-top'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    <div class='fauxborder-left tabs-fauxborder-left'>
+    <div class='fauxborder-right tabs-fauxborder-right'/>
+    <div class='region-inner tabs-inner'>
+      <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'/>
+      <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'>
+        <b:widget id='HTML6' locked='false' title='Title' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<font size="3"><a name="top"></a></font>
+<div>
+<table
+ style="color: rgb(255, 255, 255); background-color: rgb(102, 102, 102); width: 1100px;"
+ border="0">
+  <tbody>
+    <tr>
+      <td><a
+ href="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif"
+ imageanchor="1" style="font-size: medium;"><img
+ src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif"
+ border="0"></img
+></a
+></td>
+      <td colspan="4" style="width: 1100px;">
+      <div style="text-align: center;">Completed
+By: Hannah Webb (age 15),
+Veronica
+Webb
+&amp; Mike Webb<br />
+Written&nbsp;in 1997(before mobile
+phones!) Revised Mar-2011-Transferred to Blogger March 2014. Minor update Jul 2026</div>
+      </td>
+    </tr>
+  </tbody>
+
+</table
+></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML7' locked='false' title='Summary' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<table
+ style="color: rgb(255, 255, 255); background-color: rgb(102, 102, 102);"
+ border="0" cellpadding="5" cellspacing="5">
+  <tbody>
+    <tr>
+      <td><a href="#intro"><font color="#ffffff"
+ size="3">Introduction</font></a></td>
+      <td><a href="#conclusion"><font
+ color="#ffffff" size="3">Conclusion</font
+></a></td>
+      <td>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<font size="3">
+      <span style="color: rgb(51, 255, 255);">New
+windows&gt;&gt;</span></font></td>
+      <td><a
+ href="https://github.com/theorbitofmercury/Odd_pics/blob/main/SUW_actual_stops.jpg?raw=true"
+ target="_blank"><font color="#ffffff" size="3">Actual
+Stops</font></a
+></td>
+      <td><a
+ href="https://www.gpxeditor.co.uk/?lnk=https://raw.githubusercontent.com/theorbitofmercury/Tracks/main/1997-07_Southern_Uplands_Way%2BDEM.gpx"
+ target="_blank"><font color="#ffffff" size="3">Map</font></a
+></td>
+      <td><a
+ href="http://www.gpsvisualizer.com/profile_input?remote_data=https://raw.githubusercontent.com/theorbitofmercury/Tracks/main/1997-07%20Southern%20Uplands%20Way.kml&amp;trk_stats=Yes&amp;trk_colorize=slope"
+ target="_blank"><font color="#ffffff" size="3">Profile</font></a
+></td>
+    </tr>
+  </tbody>
+
+</table
+>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML1' locked='false' title='Contents' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<table
+ style="color: rgb(255, 255, 255); background-color: rgb(102, 102, 102);"
+ border="0">
+  <tbody>
+    <tr>
+      <td align="center"><font size="3">Day</font></td>
+      <td><font size="3">Date</font></td>
+      <td><font size="3">From - To</font></td>
+      <td align="center"><font size="3">Miles</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">1</font></td>
+      <td><font size="3">Sunday 29 June 1997</font></td>
+      <td><a href="#Day01"><font color="#ffffff"
+ size="3">Portpatrick to Castle Kennedy</font></a></td>
+      <td align="center"><font size="3">13</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">2</font></td>
+      <td><font size="3">Monday 30 June 1997</font></td>
+      <td><a href="#Day02"><font color="#ffffff"
+ size="3">Castle Kennedy to "The
+Beehive" at Laggangarn</font></a></td>
+      <td align="center"><font size="3">15</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">3</font></td>
+      <td><font size="3">Tuesday 1 July 1997</font></td>
+      <td><a href="#Day03"><font color="#ffffff"
+ size="3">"The Beehive" to Caldons
+Campsite at Glen Trool</font></a></td>
+      <td align="center"><font size="3">15</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">4</font></td>
+      <td><font size="3">Wednesday 2 July 1997</font></td>
+      <td><a href="#Day04"><font color="#ffffff"
+ size="3">Caldons Campsite to White
+Laggan Bothy Trool</font></a></td>
+      <td align="center"><font size="3">7</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">5</font></td>
+      <td><font size="3">Thursday 3 July 1997</font></td>
+      <td><a href="#Day05"><font color="#ffffff"
+ size="3">White Laggan to St John's
+Town of Dalry</font></a></td>
+      <td align="center"><font size="3">14</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">6</font></td>
+      <td><font size="3">Friday 4 July 1997</font></td>
+      <td><a href="#Day06"><font color="#ffffff"
+ size="3">Dalry to Chalk Memorial Bothy</font></a></td>
+      <td align="center"><font size="3">19</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">7</font></td>
+      <td><font size="3">Saturday 5 July 1997</font></td>
+      <td><a href="#Day07"><font color="#ffffff"
+ size="3">Chalk Memorial Bothy to
+Sanquhar</font></a></td>
+      <td align="center"><font size="3">8</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">8</font></td>
+      <td><font size="3">Sunday 6 July 1997</font></td>
+      <td><a href="#Day08"><font color="#ffffff"
+ size="3">Sanquhar to Wanlockhead</font></a></td>
+      <td align="center"><font size="3">8</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">9</font></td>
+      <td><font size="3">Monday 7 July 1997</font></td>
+      <td><a href="#Day09"><font color="#ffffff"
+ size="3">Wanlockhead to Brattleburn
+Bothy</font></a></td>
+      <td align="center"><font size="3">15</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">10</font></td>
+      <td><font size="3">Tuesday 8 July 1997</font></td>
+      <td><a href="#Day10"><font color="#ffffff"
+ size="3">Brattleburn Bothy to Over
+Phawhope Bothy</font></a></td>
+      <td align="center"><font size="3">15</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">11</font></td>
+      <td><font size="3">Wednesday 9 July 1997</font></td>
+      <td><a href="#Day11"><font color="#ffffff"
+ size="3">Over Phawhope Bothy to St
+Mary's Loch</font></a></td>
+      <td align="center"><font size="3">11</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">12</font></td>
+      <td><font size="3">Thursday 10 July 1997</font></td>
+      <td><a href="#Day12"><font color="#ffffff"
+ size="3">St Mary's Lock to Traquair
+New Bothy</font></a></td>
+      <td align="center"><font size="3">13</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">13</font></td>
+      <td><font size="3">Friday 11 July 1997</font></td>
+      <td><a href="#Day13"><font color="#ffffff"
+ size="3">Traquair Bothy to Melrose</font></a></td>
+      <td align="center"><font size="3">16</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">14</font></td>
+      <td><font size="3">Saturday 12 July 1997</font></td>
+      <td><a href="#Day14"><font color="#ffffff"
+ size="3">Melrose to Lauder</font></a></td>
+      <td align="center"><font size="3">11</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">15</font></td>
+      <td><font size="3">Sunday 13 July 1997</font></td>
+      <td><a href="#Day15"><font color="#ffffff"
+ size="3">Lauder to Longformacus</font></a></td>
+      <td align="center"><font size="3">15</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">16</font></td>
+      <td><font size="3">Monday 14 July 1997</font></td>
+      <td><a href="#Day16"><font color="#ffffff"
+ size="3">Longformacus &nbsp;to Cockburnspath</font></a></td>
+      <td align="center"><font size="3">17</font></td>
+ <td align="center"><font size="3">Total 212mls 341km</font></td>
+    </tr>
+    <tr>
+      <td align="center"><font size="3">&nbsp;</font></td>
+      <td><font size="3">&nbsp;</font></td>
+      <td><font size="2">Page revised:</font></td>
+      <td align="center"><font size="2">Jan-2017 & Jul 2026</font></td>
+    </tr>
+  </tbody>
+</table
+>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML10' locked='false' title='Introduction' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div>
+  <a name="intro"></a>
+  <div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Introduction</span>
+  </div>
+</div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+  <tbody>
+    <tr>
+      <td style="width: 877px; vertical-align: top;";font size="3">
+        In the Summer of 1994, Veronica, Paul and Hannah and I (Mike Webb)
+        completed our first long distance walk the famous Wainwright Coast to
+        Coast path from St Bees Head to Robin Hood Bay in England. This had
+        been a very enjoyable walk and gave us the inspiration to plan further
+        walks. The concept of a coast to coast walk was very appealing in that
+        the start and end are clearly and naturally defined. So the already
+        existing and indeed the first official coast to coast path called the
+        Southern Uplands Way (SUW) in Scotland became the ideal challenge.
+        After a couple of rest years (walking was not forgotten in these either
+        but not long distance) 1997 was to be the year for the SUW challenge.
+        By this time Paul was now 18 and being more independent and having a
+        part time job decided not to join in but instead was available for
+        transport to the start and also back from the end if required. This was
+        very useful as the start and end are both remote from main
+        communication lines.
+      <td colspan="3" style="width: 323px;"><a
+        href="" imageanchor="1"><img alt="" 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhe76qhJTptC_xatHEGgW_PW97yNQH8iC2190Jc7zrjR0He-lnO27xoNqfAsjAHbf_Huovh_dNUdvEQEjy2UfHGLSPfGh6pP6dRcegZNMYzhNzc1jlyvFZ599rWRQXiglygNyppLpspyz8/w327-h220-rw/" 
+        style="border: 0px solid ; width: 320px; height: 217px;" />
+        SUW information board with the walkers<br />
+        <br />
+      </a
+></td>
+    </td></tr>
+    <tr>
+      <td colspan="4" style="width: 323px;";font size="2">1997
+        was also a particularly good year for this walk as both Hannah and Paul
+        were doing their respective GCSE and "A" level exams. This meant that
+        when the exams finished in the second half of June they were not
+        required at school/college any longer the walk could take place early
+        in the Summer. This was ideal as it was known that both the weather and
+        midges get worse during July/August.<br />
+        <br />
+    </td></tr>
+    <tr>
+      <td colspan="4" style="width: 323px;">We were
+        reasonably well equipped having done the Coast to Coast walk 3 years
+        earlier but we had recently bought a Colman's gas stove (separate
+        burner type) which was excellent and also in 1996 Veronica and I had
+        bought Gortex waterproof coats and better waterproof trousers. The
+        tents we already had together with Karimor rucksacks were still in
+        excellent condition. I had been given the SUW official guide by Roger
+        Smith (HMSO) as a Christmas present from Mum and Dad in 1996 and this
+        included 1:50,000 strip maps of the whole way. We had sent for the
+        accommodation guide which was published by the Dumfries and
+        Galloway/Scottish Boarders Councils. This is an indispensable list of
+        the scantly available accommodation.<br />
+        <br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="width: 323px;">On
+        Saturday 28 June we travelled to the start at Portpatrick, Galloway,
+        Scotland. This was over 350 miles from Cambridge so was an all day
+        affair leaving at 1000 and arriving at 1700. The journey was good with
+        Paul sharing the driving with myself. The weather was fair with some
+        rain on the way but dry when we arrived. We decided to book in B
+        &amp; B after a brief look around at a couple of the three
+        campsites offered, mainly because we wanted to guarantee a dry start
+        for the first day and the weather looked uncertain. The B &amp; B
+        was excellent (&pound;15 each) with the landlady offering ginger
+        cake and biscuits to settle us in. She recommended the Harbour House
+        Inn for dinner and also recommended a walk for half a mile south on the
+        coast to see a ruined castle (Dunskey). We enjoyed the walk to the
+        castle which was well worth the visit and then had an excellent dinner
+        at the Harbour House Inn which was very reasonable.<br />
+        <br />
+      </td>
+      <td colspan="2"><a href="" imageanchor="1"><img
+        alt=""
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMj_imD043E0RPPE1_TSxxea1r97zMkkw3eRO0uGtFbRS7vIX0ngWSzvkx_qmtuzR_n83mlxW7wpnxXDmCeD2K2zP3cKrtHXvHuYEGavzELtqfZvl9aoFM90rZvyDXTYyVImRXACkAQ2A/w325-h220-rw/"
+        style="border: 0px solid ; width: 320px; height: 217px;"></img
+></a>Portpatrick,
+        Bed and Breakfast<br />
+        <br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="width: 323px;">Before
+        we retired for the night we spent some time looking around the very
+        picturesque village and harbour and then spent some time talking to the
+        landlady in the lounge. She showed us her paintings based on postcards
+        in the local area which were very good.<br />
+        <br />
+      </td>
+      <td><a href="" imageanchor="1"><img
+        alt=""
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjd5usP0Idi_2B_4SitgTTTAS_h_0AQ9wwACP9mgHB5B_Bs-Agm7414hWFfQo3e64OdFq2c-46f1gihvI-Riw0yIErFOsk3Lklm7Tc2NT8YLGlVe3n7k8rBR5eASRbyd-QCoeANAKCEcEY/w328-h220-rw/"
+        ="border: 0px solid ; width: 320px; height: 215px;"></img
+></a>Portpatrick
+        Harbour<br />
+        <br />
+      </td>
+    </tr>
+  </tbody>
+
+<div><a href="#top">Return
+  to top</a>
+</div></table>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML11' locked='false' title='Day01' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div>
+  <a name="Day01"></a>
+  <div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Day 1 Sunday 29
+    June 1997: Portpatrick to Castle Kennedy (13 miles)</span>
+  </div>
+</div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+  <tbody>
+    <tr>
+      <td><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit_mAu0kVqlerS8vaYWB4OzlV9cwurDePSIvTEndVJbOo7MEggr-qyAGWyeY0ac2WraMYXTjfF-0DY924_ZKVKVcnS3minueMXlPoEPDcUD7ytgehbi3LDdCHsmmd2KoBYM2H_JP23dE8/w326-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a>Sandeel
+        Bay
+      </td>
+      <td><br />
+        After rising at 0730 and eating an excellent breakfast
+        there were good weather prospects. We started our walk at 0930 from the
+        car park at the bottom of the cliffs all very reminiscent of The Coast
+        to Coast Walk. Paul saw us on our way after capturing the all important
+        photos. The way went, as seems traditional for such walks entirely in
+        the wrong direction for the first part! We were soon on top of the
+        cliffs and crossing several very pretty sandy bays (e.g. Sandeel Bay)
+        to reach a
+        lighthouse at Black Head where there is a wreck dating from 1982. The
+        way then turns inland towards Stranraer. We stopped for lunch on a hill
+        looking over the town before continuing along roads/footpath and
+        through woodlands to the A75 at Castle Kennedy(1600).&nbsp;<br />
+        <br />
+      </td>
+      <td colspan="3"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIC6FSyJPLa7_1zxMOiJWGslc_2S2BW2JvuAjvHPizMkOZccrkNuLxLdf2JM29YiFPg60wZ0yavK6jJNT3nvqsTp3B2JjtoqExfXuU_ee4SmfvegMHffGfksHr4W4ic8RQtrpv2-DjOns/w326-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a>Black
+        Head lighthouse<br />
+        <br />
+      </td>
+    </tr>
+    <tr>
+      <td><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCV_UCp2UuwKfm9KYBmloHrTp-V_i5GCO9ezCFb8LF1DhaC2CozCBy-pC7Zp9oJCs2NOWaaCfmbpj0-kXNMNWiIRMJtnNzd_5SufMFsYrRS5atZtlyI65gOtUvygAzJTq-jMkeKSeiX7M/w325-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a>Stranraer
+        from the SUW<br />
+        <br />
+      </td>
+      <td colspan="3">Castle
+        Kennedy&nbsp;we headed
+        for the Eynhallow hotel 600 yards off the way after stocking up with
+        drinks at the Esso petrol station. The hotel offered camping on the
+        lawn but with no facilities except for use of the toilets and water via
+        the kitchen (not very convenient at all). The cost was &pound;5 per
+        tent but free if you had a main meal in the bar. So this is what we did
+        as we had planned to eat well when we could to keep up strength. This
+        we found to be very important after 1994 walk as 2-3 days of camp food
+        does not provide the requirement for hard walking days.<br />
+        <br />
+        We went to bed early and
+        slept as well as possible on
+        ones first nights camping. We had survived the first days walking with
+        the heavy packs!<br />
+        <br />
+      </td>
+      <td><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiuxpo-Zo1TSLaBD-ZcG_ofwhlWH5cOC0isG8mPwo44w4twGX-rTZe90Ln_2WglU5fbuYItVEMvrWmBAjg_r9aVUlZKoHZ7_WYgCzcnBWAqkA226RZtEz7GKBvuZmJg7AB8TywvRC-wZLk/w330-h220-rw/" style="border: 0px solid ; width: 320px; height: 214px;" /></a>Castle
+        Kennedy grounds
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div><a href="#top">Return
+  to top</a>
+</div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML12' locked='false' title='Day02' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div><a name="Day02"></a>
+<div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Day
+2 Monday 30
+June 1997: Castle Kennedy to "The Beehive" at Laggangarn (15 miles)</span></div>
+
+</div>
+
+<div>
+<table
+ style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);"
+ border="0">
+  <tbody>
+    <tr>
+      <td style="height: 243px;"><a href=""
+ imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOYO9vopgFhSquaZ44_15Of9ivdrHVNVU2gtdg4qJIp8tEquqOJUnYGF4ifu-iJ46SK1m2XXEkgc22zpQhDjKnnJ2Tt2CvDsVIfS0kZM5KWrerzAI8EybWW1RiBNxuzhTZ_JhNFxplUMM/w328-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 215px;" /></a><br />
+Huftanny bridge<br />
+      </td>
+      <td style="height: 243px;">We woke for a early start
+after a dry night and now we had more serious walking ahead of us. The
+way first past through the grounds of the castle. This was followed by
+a long section through a forest which ended at the Huftanny suspension
+bridge where we saw a calf which had been born just seconds before. We
+moved on quickly so as not to disturb the mother cow as she was in
+obvious distress at our appearance, then good tracks across moors then
+a minor road past two farms lead us towards another forest. It was just
+before here at Balmurie that we encountered for the first time a Dutch
+couple. At the time we did not know that they were also doing the SUW
+but we were to leapfrog them several times latter. The Dutch couple
+turned off shortly after hitting the forest for a wild camp but we
+carried on to our objective of the Beehive Bothy . It was our first
+long day and we tired towards the end but were very pleased to find the
+Beehive in the end.</td>
+      <td style="height: 243px;"></td>
+      <td style="height: 243px;"><a href=""
+ imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXmIlXEvVpp6vUUvuHZOpMXjfGmD2ONlM7_npNdwWE2VoV7HPMEdgARlwjtxlojJtC46lM4SEpMal6V7q-U5MZXsF8aDAGBzAjb4YtCkksFoC3j5WPGnSowDk4J8xZH_dzMYoVhRk1rI4/w326-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 216px;" /></a><br />
+The Beehive
+bothy<br />
+      <br />
+      </td>
+    </tr>
+    <tr>
+      <td style="height: 233px;" colspan="3">The
+bothy was
+a wooden octagonal pyramid
+construction with double sleeping benches along each side. We soon made
+ourselves comfortable and made dinner of the dreaded "Bean Feast" using
+peaty water from a nearby stream. The midges were all outside but
+inside it was very comfortable and we enjoyed very much our first bothy
+experience having the place to ourselves. The bothy log book provide
+some light reading entertainment for the evening but we were tired and
+went to bed early. We had a good nights sleep except being woken by the
+bothies mouse (which we had been warned about in the log) which in the
+middle of the night proceeded to ramble through the bin bags rustling
+them in the process.</td>
+      <td style="height: 233px;">
+      <div style="display: block; text-align: left;">
+      <div style="display: block; text-align: left;">
+      <div style="display: block; text-align: left;">
+      <div style="display: block; text-align: left;"><img
+ alt=""
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOW1fQKZATq8aM7ZFj0jEs4TEAY0AOTLkiO1qmWOTWKZjENxJfVfJ0cM8jmQXE614uReZhXNwkSWKpiPAX3t1jTUgJR5omqDlei3bkHwHs0o8eTYWv3lggdvM98oAfi8rPF3y22bO4PUw/w328-h220-rw/"
+ style="border: 0px solid ; width: 320px; height: 215px;"><br />
+Inside the Beehive bothy<br />
+      <br />
+      </img
+></div>
+      <a href="" imageanchor="1"> </a></div>
+      </div>
+      </div>
+      </td>
+    </tr>
+  </tbody>
+
+</table
+></div>
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML13' locked='false' title='Day03' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div><a name="Day03"></a>
+<div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Day
+3 Tuesday 1 July 1997	"The Beehive" to Caldons Campsite at Glen Trool	</span></div>
+
+</div>
+
+<table
+ style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);"
+ border="0">
+  <tbody>
+    <tr>
+      <td>
+      <div style="display: block; text-align: left;"><a
+ href="" imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwp1KngsJLtwPtY_VCY8jTQTUY0kF352FvCkGV_r8GvR2Eff3iiPFOHBxjkX3jfzzDdL4_Kq11kOiSvuol6p1nirMLdlE0WnzpBi3o32JN5OHX5BWrx3a54Jj_xomm7wXyycfM8WcyR00/w325-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 216px;" /></a
+></div>
+Wells o-the Rees<br />
+      </td>
+      <td>Next morning we were away
+early again after an early
+night. After passing some standing stones and the Wells o' the Rees we
+headed for a minor road via a very wet underfoot diversion through the
+forest. There was a little rain (which managed to penetrate my map
+case, hence holes in the map) but we soon reached the minor road and a
+farm at Derry. Here Veronica asked for some clean water for our bottles
+as we still only had the peaty water from the forest stream. There was
+then a long walk on the road which eventually came to a more major
+road. This was crossed in a dog leg and then a pleasant crossing of a
+moor to Bargrennan which was a possible stopping point. But as the
+campsite (at another hotel) was off route we decided to continue to the
+Caldons campsite in Glen Trool another 5 miles. We met a lost American
+couple who were on a way marked forest trail. When they asked which
+forest trail we were following I was able to reply "the one following
+the white thistle symbols which is 212 miles long!". Unfortunately it
+started raining and being at the end of the day and because we were
+tired we struggled to the campsite in very wet over and under
+conditions.<br />
+      <br />
+      </td>
+      <td>
+      <div style="display: block; text-align: left;"><a
+ href="" imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzv001FdxL9I-Cb1JxFuxS2Jgx0QzVx7zIxX78AvYYl2vxcttnfHAudORfpYeHXMVaUewd1At8iu9YVDf0UYx8ZpsHL5ruRSLMEnFceOJMu4ZHS8mll7VXV9Zi7DIF6KXImU8ERy-IMF4/w327-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 215px;" /></a
+></div>
+Laggangairn standing stones.</td>
+    </tr>
+    <tr>
+      <td>
+      <div style="display: block; text-align: left;"><a
+ href="" imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzTJMXKYWxUk1FOhYKEa58qUT_pnvsi0MAsI5JTK_qFhk1tuY7opffjnq_qOqNwbhT7IeWsze4RO2OsrEivKKBHL2jCIRav5iNkQODvreNiNsLvbvXoe2lny-6t-f4qWwHmb01Phwo9eI/w327-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 215px;" /></a
+></div>
+Loch Trool.<br />
+      <br />
+      </td>
+      <td colspan="2">We
+arrived at the campsite at 1700 managing to pitch both
+tents reasonable quickly and avoiding the inners getting wet, but here
+we hit the midges in a big way. They were horrendous and soon we were
+applying the repellents. This had a very limited in effect but
+fortunately we had brought with us some smoke coils, which had not seen
+action for many years since the last encounter with Scottish midges. In
+the dome tent we managed to keep the door closed while we prepared
+dinner from some food we had purchased from a small campsite shop. The
+evening passed quickly as we tried often in vain to avoid the midges,
+to shower (very good showers) and dry some of our wet clothing in a
+drying cabinet. To bed early was require to rest and escape the midges.</td>
+    </tr>
+  </tbody>
+
+</table
+>
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML14' locked='false' title='Day04' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div>
+  <a name="Day04"></a>
+  <div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Day
+    4 Tuesday 2 July 1997	Caldons Campsite to White Laggan Bothy Trool	</span>
+  </div>
+</div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+  <tbody>
+    <tr>
+      <!-- <td colspan="4"><font-size: 1em;;>-->
+<td style="width: 877px; vertical-align: top; font-size: 1em;">
+We awoke
+        early to heavy rain (0600)
+        but having decide it was too much effort to get moving in such
+        conditions it paid off as by 0700 the rain had virtually stopped. The
+        midges however were just as active as the previous evening and we
+        decided to try and make a quick escape. The tents were packed wet
+        inside and outside which did not help with the weight of the packs
+        while Hannah spent her time in the toilets avoiding the midges. Soon we
+        were on our way in slowly improving conditions along the south side of
+        Loch Trool which in better conditions would have been very pleasant
+        which marvellous views. <br />
+        <br />
+        
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left; font-size: 1em;">
+          <a href="" imageanchor="1">
+            <font size="3">
+              <div style="display: block; text-align: left;">
+          <a href="file:///Z:/Web%20Pages/Google%20Sites+Blogger/Blogger%20Gadgets-Southern%20Uplands%20Way/day04.html" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSD5T6gUS2eswBJPLf6wGz86szY5MjKPbqq9548yRTq6QkBAjj4b7eVn15_E-orgg5ElAsg76ZP5WudBIKGz968M24AzEN8T8Fi5E-4rNXtqtMmDfGh0QNm1h2URhwpJSqylAOgNm24vM/w326-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a></div>
+          </font></a>
+        </div>
+        <font size="2">Inside White Laggan bothy </font><br />
+      </td>
+      <td colspan="3"><font size="3">The high
+        hills (Merrick)
+        were all shrouded in mist.
+        After we reached the end of the loch the way passes through forest
+        paths and then onto a good moorland track leading to a col. Just before
+        the col head the misty heavy drizzle descended again. We had, by this
+        time, decided to stop at the <span style="font-size: 13px;"><a href="http://www.mappingsupport.com/p/gmap4.php?ll=55.067909,-4.403157&amp;z=17&amp;t=h" style="color: rgb(68, 68, 68) ! important; text-decoration: underline;" target="_blank"><font color="#ffffff" size="3">White
+        Laggan</font></a></span>&nbsp;bothy which we
+        would reach at
+        lunch time in order to break this next section of 26 miles to St John's
+        Town of Dalry into two, and also to enjoy a half day rest after the
+        previous two long 17 mile days and our encounters with the midges. We
+        arrived at the bothy at 1330, which was a few hundred yards off the
+        track up the hillside. The accommodation was excellent with an upstairs
+        for sleeping and a small kitchen area and a good log stove. It was an
+        old game keepers cottage and had been renovated and maintained by the
+        Mountain Bothies Association (MBA). We soon made ourselves comfortable
+        and had lunch. By this time food was becoming a problem in that we
+        could not carry very much and shops were either non-existent or very
+        small with no stocked dried food. <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <font size="3">
+          <div style="display: block; text-align: left;"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHNZgTwz7JFe1Y04keISr8UDDYejnBz5GifTZO2JUgkoF1Fw5Ajpj1YTqa3kqh_8aS50wDFRKYQgn86CRlzAxex2ENwNg5YSuIkOFsFy4zOv31BmfTcNS4_Y23J0uMN5J4kLfl4vbfN9Y/w326-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a></div>
+        </font>
+        White Laggan bothy from the distance
+        <font size="3">
+          <div style="display: block; text-align: left;"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi9l0lJbxD71RwQjlJbg8G5mFZLj5qMp9k-ndcNkyu9EpCCfTebNjvYX9MCk8Q4FeTpHdPtT6ndVG0RJ2sAHLIwCa-IrrXmBUq-Y6Bg-prlEH6PEUeqEBv5LPnkPJgStx8zdHp-suUBhaI/w326-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a><br />
+            Loch Dee from White Laggan
+          </div>
+        </font>
+      </td>
+      <td colspan="2"><font size="3">Shortly
+        after we arrived the Dutch
+        couple we had met a couple of days previously arrived to make
+        themselves lunch. They seemed in no hurry but eventually left about
+        1500, after preparing and eating a meal. We then enjoyed the place to
+        ourselves the weather by this time turning into a very pleasant sunny
+        afternoon. We took the opportunity to dry everything our e.g. tents
+        which would help us the next day. The views were superb across Loch Dee
+        below us where we could see a lone fisherman in his boat. We were able
+        to see the SUW track and although we did see another walker no one else
+        came up to the bothy. We enjoyed our evening meal and the time seemed
+        to soon pass. We had a good nights sleep (no mouse this time!) in our
+        second bothy.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML15' locked='false' title='Day05' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div>
+   <a name="Day05"></a>
+   <div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Day
+      5 Wednesday 3 July White Laggan to St John's Town of Dalry	</span>
+   </div>
+</div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+   <tbody>
+      <tr>
+         <td>
+            <font size="3">
+               <div style="display: block; text-align: left;"><a
+                  href=""
+                  imageanchor="1"><img alt="" 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh8pqR06bJbUAoDVsJBnCj-aA7Mw82bS6OrBj8hevZZCliHwE8TxicuKDJ96ljQwFpixTsapJ0qUYQIYX_KPtF3j60B7bavaXscSJVhexkgic1oUWx9pUHKrjF-Q1UnbRbkZsh0Qn29ByM/w326-h220-rw/" 
+                  style="border: 0px solid ; width: 320px; height: 216px;" /></a
+                  ></div>
+            </font>
+            View of St Johns Town of Dalry
+         </td>
+         <td><font size="3">The weather was fine and
+            after early encounters with
+            midges and battling with the spade (for our toilet) we left early,
+            (0815) sorry to leave this beautiful place. We were soon back into the
+            rhythm of walking along good forest tracks which made progress very
+            fast passing Clatteringshaws Loch on the way. Shortly after passing the
+            Mid Garrary Scout Hut (another possible source of accommodation if
+            pre-booked) Veronica had an interesting chat to a Cow Lady and learnt
+            much more about the temperament of the beasts. The lady also
+            recommended "Maureen" to us at the farm in Dalry for B &amp; B. We
+            then crossed some open moor land on a good path (passed a group of
+            girls doing their D of E) and stopped for lunch shortly after reaching a
+            minor road by a farm at Knochsheen. Not long after resuming the walk,
+            heavy rain started but we were soon along the road and crossing a small
+            hill section in the wet to reach the small town at 1500. The last half
+            mile or so which followed the Water of Ken river was very long wet
+            grass, which did nothing to help us keep our feet/boots dry. In the
+            town the weather brightened up quickly and we soon were drying out. We
+            had decided against camping here (the possibility was available at
+            "Maureen's" farm in the centre) so Veronica checked out the
+            possibilities while we continued to dry outside an Inn. The preferred
+            farmhouse ("Maureen") was booked up so a Hotel opposite (Lochinvar) was
+            selected, being only &pound;15 each. The accommodation was fine and
+            we were soon all restoring ourselves in the bath and visiting local
+            small shops (nice friendly shop keeper).<br />
+            <br />
+            </font>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <font size="3">
+               <div style="display: block; text-align: left;"><a
+                  href=""
+                  imageanchor="1"><img alt="" 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiag1-nb4wWCxoXp3RNSuYmPqW6esqcUiJYfw2XNlzU3k01ZV246OKNkpoiwYPKwe5iIhHhL78c3DhWujTQuEPQusyqtgxAyecQvwrpoyeuN2vUDA8KabDMnMaslU5hrzzJzw8pk4kaws4/w325-h220-rw/" 
+                  style="border: 0px solid ; width: 320px; height: 217px;" /></a
+                  ></div>
+            </font>
+            Bridge over Water of Ken at St Johns Town of Dalry<br />
+         </td>
+         <td colspan="2"><font size="3">We had
+            and excellent
+            evening meal in the hotel with
+            excellent beer. The food was very generous and cheap (half chicken
+            &pound;4.90). The bar soon filled up and the hotel landlady and her
+            waitress were soon pushed to the limit but in the end they coped. They
+            had been very quiet recently apparently and were caught out by the
+            sudden influx. In the bar were also another group of SUW walkers. These
+            were an elderly man and two women. They were doing the walk with lifts
+            and we were to meet them again just before Wanlockhead. I had a brief
+            stroll to see the local church after dinner but time for an early night
+            soon arrived.</font>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML16' locked='false' title='Day06' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<div><a name="Day06"></a>
+	<div style="display: block; text-align: left;"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" border="0" /><span style="color: rgb(255, 255, 255);">&nbsp;Day
+	6 Thusday 4 July 	Dalry to Chalk Memorial Bothy	</span></div>
+
+	<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+
+
+ <tbody>
+    <tr>
+      <td><font size="3">
+      <div style="display: block; text-align: left;"><a
+ href=""
+ imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNS2iepgDtvemnIpqWqafL7JpO36Tiy8Cn8IeGF3l24OH_z4Anw-nanoII62-4Qavc5suckuZwOAeVxCyXOp_rsf1tVzEzGAEsNSC5ZBZNvPDHct3cJ3HcHEqIhD8zikswWcfd1UqWS9I/w327-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 215px;" /></a
+></div>
+      </font>The top of Benbrack (2nd hightest point on SUW)<br />
+      <br />
+      <font size="3">
+      <div style="display: block; text-align: left;"><a
+ href=""
+ imageanchor="1"><img alt="" 
+ src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgC3BZntO7fnO6ZTdhraJa5Tf7xksiU7Da7sEGYwuOV5ScodZEFMeSq0vzkd5ABAZxopCovASJitDGm7E9EQzOTfu0mbIQ7ncOmAU9idS4Hp1fhyJjjlbINnwfGrvTIjas38L-czUSH22A/w326-h220-rw/" 
+ style="border: 0px solid ; width: 320px; height: 216px;" /></a
+></div>
+      </font>Michael at the Chalk Memorial bothy<br />
+      </td>
+      <td colspan="2"><font size="3">We had a
+good breakfast in the hotel before we left for
+a long day. The next section was said to be the most difficult in terms
+of being remote from accommodation and facilities and being long (27
+miles to Sanquhar). We planned to divide the section into two hoping to
+reach the&nbsp;<span style="font-size: 13px;"><a
+ href="https://www.gpxeditor.co.uk/?lat=55.2935973117&lon=-4.0724903313
+"
+ style="color: rgb(68, 68, 68) ! important; text-decoration: underline;"
+ target="_blank"><font color="#ffffff" size="3">Chalk
+Memorial bothy</font></a
+></span><span
+ style="font-size: 13px;"><font size="3">&nbsp;at
+the Head of Water Ken. The first part
+to Stroanpatrick (9 miles) was very pleasant on good paths being a
+mixture of farming and low moor land crossing two minor roads on the
+way. We stopped for lunch at Stroanpatrick and then headed on towards
+another forest. Before we left the road we had a chat with the farmers
+wife who was waiting by the road and discussed how they survive in the
+winters. (They are often blocked in by snow for weeks and therefore
+have to keep a good stock of supplies). The way then followed good open
+paths through recent plantations and over the top of the hills. A stiff
+climb was called for up the second highest hill on the SUW (Benbrack
+1903 ft). After the top the way continued over a couple of more hills
+and eventually into another forest. A good track helped on this last
+part but we were tiring from the very long day. We past Allan's Cairn
+and then soon reached the bothy at 1730. We found the bothy already
+occupied by the Dutch couple but we soon established our own areas for
+sleeping and cooking. They were again not very talkative, maybe because
+their English was not very good. There was a good clear stream just out
+the back and a small separate room where Veronica and myself managed to
+have an evening wash to freshen us up. This bothy was purposely built,
+(breeze block) but had been vandalised in the past and hence some of
+the facilities such as a fire had been blocked up. A pity! </font><font
+ size="3">We went to bed early as was
+becoming traditional.</font
+></span
+></font><br />
+       <font size="3"> <br />
+      </font><font size="3">
+      <div style="display: block; text-align: left;"><a
+ href=""
+ imageanchor="1"><br />
+      </a
+></div>
+      </font><br />
+      </td>
+    </tr>
+  </tbody>
+
+
+
+
+	</table>
+
+
+	</div>
+
+
+	<div style="display: block; text-align: left;"></div>
+
+
+	<a href="#top">Return
+	to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML17' locked='false' title='Day07' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day07"></a></p>
+<div><span
+   style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+   alt="" border="0" />&nbsp;Day 7 Saturday 5 July Chalk Memorial Bothy to Sanquhar</span
+   ></div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+   <tbody>
+      <tr>
+         <td colspan="3"><font size="3">We arose
+            early for a short day after yesterdays
+            marathon. The Dutch couple were on their way before us. The weather was
+            good, being bright with some sun. The way was a good track to the end
+            of the forest and then a road section for a couple of miles. We filled
+            up our bottles with fresh water at Polskeoch after checking with the
+            local inhabitant of a remote but fairly new bungalow.<br />
+            <br />
+            </font>
+         </td>
+         <td>
+            <font size="3">
+               <div style="display: block; text-align: left;"><a
+                  href=""
+                  imageanchor="1"><img alt="" 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLcMjso935HyKiCH80QjFiUQnTbmjMlZnG-ZMBMIjob5kNOpHDI6-zfHhzCm9L9ScHcAIcLZUTTz5DxbTbQSYajKYOfZI5_pr8uA4l6BxfJMjKTupZhOewmID4dR0z85DkAXuc4owNnVI/w330-h220-rw/" 
+                  style="border: 0px solid ; width: 320px; height: 213px;" /></a
+                  ></div>
+            </font>
+            View of Sanquhar from Cloud Hill<br />
+            <br />
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <font size="3">
+               <div style="display: block; text-align: left;"><a
+                  href=""
+                  imageanchor="1"><img alt="" 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnmAqQyESASNTwl7XsGT5eq3DlfMO5qHVdK-8SocxSt10K1KsaJROjjH4QYfH0vlsHR_EhIIToFClm6uk575JHwjWF5ekDqGNutr2UtkG3YiyVczZAuW9tfGfLs2tGChLNO3jK6IYkilw/w325-h220-rw/" 
+                  style="border: 0px solid ; width: 320px; height: 217px;" /></a
+                  ></div>
+            </font>
+            Sanquhar Castle<br />
+         </td>
+         <td><font size="3">After passing a couple of
+            farms on the road the way
+            headed over Cloud Hill on good paths but being tired from the day
+            before, the ups and downs seemed endless. Eventually we crossed the
+            tops and along way off we could see our objective for the day several
+            miles (5) away but all down hill. We were soon at Sanquhar (1330) where
+            we bumped into our Dutch friends in the street. They had just been in a
+            bar for some coffee. We had hoped to find a pharmacy open as Veronica's
+            eyes had been very bad for the last two days as a results of the midge
+            bites back in Glen Trool, but the pharmacy had closed at 1230. There
+            were several small supermarkets so we treated ourselves to a few
+            things. A camp site was at the far end of the town and this we soon
+            found behind a petrol station. It was not long before our Dutch friends
+            also turned up to camp there as well.<br />
+            <br />
+            </font>
+         </td>
+         <td colspan="2">
+            <font size="3">
+               <div style="display: block; text-align: left;"><a
+                  href=""
+                  imageanchor="1"><img alt="" 
+                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzys1sVGzFKJC4SU7AIPENWA0zctxcKMV0ci_EO2kxtYiPbkKbe-KcKleJqyemQSMLU2E6-taZnV38LnafjY0MBIG3vjQ40Mk5HuP3BKvE_nPd8vWsHM9J-LewWRcqik4Gh2noHNqhGj4/w327-h220-rw/" 
+                  style="border: 0px solid ; width: 320px; height: 215px;" /></a
+                  ></div>
+            </font>
+            Campsite at Sanquhar
+         </td>
+      </tr>
+      <tr>
+         <td colspan="4"><font size="3">The
+            campsite was ideal
+            being close to the shops/phone
+            and well maintained. The toilets and free showers were very
+            satisfactory. The weather by this time had turned to be a glorious
+            sunny afternoon with a light breeze and no midges! We made good use of
+            the weather and the facilities to wash all of our dirty clothes
+            including trousers. They all dried nicely by the evening. Veronica and
+            I had a wander to the nearest supermarket to stock up further and buy
+            something for dinner while Hannah rested at the campsite. I also phoned
+            the Scottish Youth Hostel (SYH) at Wanlockhead to book for the next day
+            as this was on the route. We also managed to top up our petrol supplies
+            for the stove which was handy as well. A good dry night in prospect we
+            retired early.<br />
+            <br />
+            </font>
+         </td>
+      </tr>
+   </tbody>
+</table>
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML18' locked='false' title='Day08' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day8"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day
+  8 Sunday 6 July Sanquhar to Wanlockhead</span
+    >
+</div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+  <tbody>
+    <tr>
+      <td style="width: 299px;">
+        <font size="3">
+          <a href="" imageanchor="1"><font size="3"> </font></a>
+          <font size="3">
+            <div style="display: block; text-align: left;"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicfzTpjMzCZwUoELAmMPS6Rrz0EPnPYqtnowQkh3OpWrH9dTYmAPvZzwrUmhz3Poq8ccj_Pn15lnBWw82One6z_UWBP93qNAE1SPXvoxl5NzB7tMMF3tWqlYL_iJiNdx7QGvt0XTdbs_c/w326-h220-rw/" style="border: 0px solid ; width: 320px; height: 216px;" /></a></div>
+          </font>
+        </font>
+        <font size="2">Approaching
+        Wanlockhead</font><br />
+        <br />
+      </td>
+      <td style="width: 579px;"><font size="3"><font size="3">The start of the day turned
+        out not to be as promising
+        as we had hoped as it had rained slightly in the early morning, but it
+        had stopped by the time we got up and the tent although damp was not
+        too bad. We moved on before our Dutch friends who seemed in no rush.
+        Today was to be another short day and the weather slowly improved.
+        After a steep climb on a good path out of the town we were soon into
+        the hills and down to Cogshead (an isolated valley) by 1130. Knowing it
+        was a short day we decided to have lunch early before climbing out of
+        the valley the other side. The sun had come out by this time although
+        there was still mist on the tops of the hills. Veronica decide to take
+        the opportunity of drying her draws out on the stile while we ate. This
+        caused much amusement amongst a group of mountain bikers who came
+        along. Another couple also past us going in the other direction. They
+        had done parts of the SUW previously but were just out for a stroll
+        today. We set off after lunch up the hill over to Wanlockhead. On the
+        way we past three giggly girls and then we were caught up by the
+        elderly trio we had seen in the hotel in Dalry. Veronica enjoyed a chat
+        with one of the ladies from this party (Irish) and we were soon down
+        the other side and on the final track to Wanlockhead. We met on the way
+        a camping couple and had a chat with the man who claimed he was going
+        to do the SUW soon although he did not look the type!<br />
+        <br />
+        </font></font>
+      </td>
+      <td colspan="6" style="width: 295px;">
+        <div style="display: block; text-align: left;">
+          <font style="font-size: medium;" size="3">
+            <font size="3">
+              <div style="display: block; text-align: left;"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzSBJJamm8voarLMHbsYILEgo95rA6KDLGyQmW2QvbiDcJmUiumtnlwf3j5Mbqkz-Xb_OrTBEAmWoZy35XNgiyiISxae907Qp-Yv5sxitHr_yFBLw-9XjMK_lcux2u9sRAtE6Jy75Hl8o/w327-h220-rw/" style="border: 0px solid ; width: 320px; height: 215px;" /></a></div>
+            </font>
+          </font>
+          <font><font size="2">Centre
+          of Wanlockhead</font><br />
+          </font>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 299px;">
+        <font size="3">
+          <div style="display: block; text-align: left;"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgU6-zWf0YyyKa9MurIQ0Qjp0CY1Wehmq0hpLGB3n6MpOVF7aVvJpy6-sFC-I3LuHoDGKFPxjVgdo4v2cRgGvPTljENYZXdC0VlYeaG6kUTLtbk5La25LaVNNhKB1oB2Nqzj54X3olZwxI/w329-h220-rw/" style="border: 0px solid ; width: 320px; height: 214px;" /><font size="3"> </font></a></div>
+        </font>
+        View on the way to Cogshead near Wanlockhead<br />
+        <br />
+      </td>
+      <td colspan="6" style="width: 295px;"><font size="3">We arrived in the village
+        at 1400 (the highest village
+        in Scotland) and having three hours spare before the SYH opened we
+        decide to take the tour of the lead mining museum which had been
+        recommended to us. The local shop, which had been said to be open 7
+        days a week proved not to be open which was a pity as again we were
+        struggling with our rations. The mine tour proved very interesting and
+        included a tour down one of the actual mines as well as a visit to a
+        miners cottage and a library (the first subscription library on the
+        UK). The guides were first class and it was well worth the money.</font><font size="3"><br />
+        <br />
+        </font>
+      </td>
+      <td><font><font size="3"><font size="3"><a href="" imageanchor="1"><font size="3"> </font></a><font size="3">
+        </font></font></font></font><font size="3"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_YKmjTHBwt_RiVEYoAD3o8hV-yp9yy8nm8msSX5NruBqI70T3SCrPifo1DDnEUYKnlwfbajCOnEjm-PGzc-RbO6hyWz7M_AHT-f1y9M4tj83c3KARy_eVgVfEkjaFYdqvX1tuH7STVKw/w325-h220-rw/" style="border: 0px solid ; width: 320px; height: 214px;" /></a></font>Inside
+        of miners cottage Wanlockhead<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="8" style="width: 295px;"><font size="3">We headed up a hilly street
+        about 1645 to the SYH.
+        After waiting a while the warden turned up and we checked in. This was
+        a self-catering SYH so after cleaning up in the single shower we dried
+        the tents on the washing line in the garden, and then had dinner.
+        An Irish labourer and his son were there together with a Scottish lad
+        who was on his own. The Irish guy could really tell the blarney if you
+        could understand him so we just humoured him. The Scottish lad, from
+        Aberdeen, was very chatty (offering to scrub Hannah's back in the
+        shower) and told us all about his walking. He was at present doing the
+        Corbetts (2,500-3,000 ft) having completed all but two of the Monroes
+        (over 3,000 ft) including the Inaccessible Pinnacle on the Isle of Sky.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="8" style="width: 295px;"><font size="3">Later several cyclists (3
+        separate groups) all doing
+        Lands End to John o'Groats turned up. There was a chap and his son, two
+        ladies and a elderly Glaswegian. All were very friendly and we had an
+        pleasant evening. Hannah and Veronica played Scrabble before retiring.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="8" style="width: 295px;"><font size="3">We were of course ready for
+        bed before 2200 as by now
+        our feet although not blistered were sore from the pounding they were
+        receiving and they needed as much rest as possible.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML19' locked='false' title='Day09' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day9"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day
+  9 Monday 7 July Wanlockhead to Brattleburn Bothy</span
+    >
+</div>
+<table style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);" border="0">
+  <tbody>
+    <tr>
+      <td><font><font size="3"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjab__mNodjdj7UjD1ou96dySRY_bbFkOoisDY1uYus2DDEdFipHBnDNKE11v-dZ83aX7paoO5VkS8yJ2-5Ec_ZhcCyz-AbYcQloXeHm22R79A9Y88xE0-6l9tOGXQEVP3JyvtOkzGqNYk/w324-h220-rw/" style="border: 0px solid ; width: 320px; height: 217px;" /></a></font></font>Climbing
+        Lowther Hill the highest point on the SUW<br />
+        <br />
+      </td>
+      <td colspan="3"><font size="3">Today we
+        were to pass several
+        milestones. This included the long awaited halfway point and the
+        highest point on the SUW Lowther Hill (2379 ft). The hill was the first
+        thing on the days agenda as the climb started straight from the village
+        and this being the highest village in Scotland we hoped it would be
+        easy. We soon had breakfast and were on our way in good bright weather
+        with low cloud on the hills. The route up Lowther Hill was no problem
+        there being a CAA radar and GPO transmitter stations with access roads
+        leading to the very top. The top was in cloud so the supposedly
+        extensive views were not to be seen.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><font><font size="3"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtMqJGCPnNoZ8vUk6-71_Qvg_N6POLMxsTRbleemlSNPEibCpPR42D_CQPPLkpn8-iWJMha9DbafRw_F9Zv5fD2OPoGmD4zZO-K7dr6MRb9pfKhyg2jW3TOdA1SGu7UpdDawmu2A3oAWA/w325-h220-rw/" style="border: 0px solid ; width: 320px; height: 217px;" /></a></font></font><br />
+        <font size="2">BSW Harvesting on Pin Stane</font><br />
+        <br />
+      </td>
+      <td><font size="3">The way
+        continued over further hills
+        in the range with an extremely stiff straight climb on the last one
+        before descending to quiet A road. We had noticed several times that
+        many of the paths were poorly constructed in that they did not take out
+        the steepness by using zigzags as you find, for instance, in the Lake
+        District.<br />
+        <br />
+        </font><font size="3">After
+        crossing the A road we stopped
+        for lunch before heading into another forest. On the way we past a
+        forest harvesting operation by BSW which was one of the companies whose
+        sawmill I
+        had visited on&nbsp;business&nbsp;in March near Inverness.<br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td><font size="3"> </font><font><font size="3"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizStifqJx2wZqPGldUTTARvwmVd-stJz7e4Kf_UqQPcNGj4odRPLnmxxMi9dcS88V_H9lZ30i_BNwQ7_NwcDCaqK9nbCl-7ejoWOEpeoqMJsS2MxbP7paF1AiTZM_ji7ZvETRYfhUlcfY/w329-h220-rw/" style="border: 0px solid ; width: 320px; height: 214px;" /></a></font></font><font size="2"><br />
+        Daer Reservoir</font><br />
+        <br />
+      </td>
+      <td colspan="2"><font size="3">With
+        good forest tracks we
+        were soon at the Daer
+        Reservoir, which the Queen had opened in 1956. The way here went around
+        the water companies properties on an ill defined path through grass
+        taking what seems a long route to get just above the dam. Here we
+        turned to climb Hods Hill which by this time in the day (1500) turned
+        out to be a real slog. Eventually the top was reached and then a couple
+        of more ups and downs on further hills before turning into another
+        forest. We were now not far from our destination of the bothy
+        at&nbsp;<span style="font-size: 13px;"><a href="http://www.mappingsupport.com/p/gmap4.php?ll=55.332283,-3.523006&amp;z=13&amp;t=h" style="color: rgb(68, 68, 68) ! important; text-decoration: underline;" target="_blank"><font color="#ffffff" size="3">Brattleburn</font></a></span>&nbsp;.
+        A steep long down hill section followed and we reached the
+        point where the turn off to bothy was to be. This was not signposted
+        but Hannah who is an expert map reader said it was off to the right. We
+        followed an indistinct long grass path and found the bothy (1715) in
+        its clearing about quarter of a mile away.</font>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <font size="3"> </font>
+        <div style="display: block; text-align: left;"><font><font size="3"><a href="" imageanchor="1"><img alt="" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyptstqidAAaq7JeDHpoXWgWFHBFU7Ihh9aqyuSroBpwL_TXCNyVEZGqfnOKmkPLWPusmXaZarF1g2An7xnVBR9hv_XgYpv8ajxnzCdCbRbmLr2X2NTr-8cZhc7UVI9uqF2IFnKW60qBQ/w324-h220-rw/" style="border: 0px solid ; width: 320px; height: 214px;" /></a></font></font><br />
+          <font><font size="2">Brattleburn bothy and
+          Veronica </font><br />
+          <br />
+          </font> 
+        </div>
+        <font size="3"> </font>
+      </td>
+      <td colspan="4"><font size="3">This MBA
+        bothy was in good condition
+        having been re-roofed recently. One room was very dusty from the
+        building operations so we choose to sleep in the main room downstairs
+        with the stove. There was also an upstairs sleeping area they had
+        created when they re-roofed the stone cottage. We again had the bothy
+        to ourselves so made dinner with our very limited supplies and amused
+        ourselves reading the log book. It had been a very long hard day and
+        bed time was again early.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return
+to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML20' locked='false' title='Day10' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day10"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day
+  10 Tuesday 8 July Brattleburn Bothy to Over Phawhope Bothy</span
+    >
+</div>
+<table
+  style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);"
+  border="0">
+   <tbody style="font-size: 22px";>
+    <tr>
+      <td colspan="5"><font size="3">The plan
+        for the section from
+        Wanlockhead to St Mary's Loch was to spit this into 3 days rather that
+        2 long days. Hence we had stopped at the bothy short of Beattock the
+        idea being then to break the journey at Beattock a mornings walk away
+        and continue in the afternoon to another bothy called Over Phawhope.
+        This would then help to break down the long 21 mile section from
+        Beattock to St Mary's Lock which although the official guide said was
+        fast we thought would be too much for us. This plan proved to work out
+        very well and was essential as the so called "fast" section to St
+        Mary's Loch proved to be more difficult in the first part than
+        indicated. So we left Brattleburn early with sunny weather. It was
+        about 6 miles to Beattock initially through forest and then through
+        pleasant farming land and eventually meeting a minor road. This was
+        followed by a up and down route to Beattock with Veronica and Hannah
+        trying to avoid as many cows as possible, along the way. Both of them
+        had several encounters already with cows which always apparently wanted
+        to chase them so they always had to take wide routes to avoid them.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5"><font size="3">At
+        Beattock we had half planned to
+        eat lunch at the hotel we knew was on the route. But on arrival (1145)
+        and looking at the hotel we decided that we might not fit it with the
+        state we were in! We believed there was a shop in the village off the
+        route so we decided to leave Hannah at the road junction with the packs
+        and look for the shop. On the way a young homeless couple and their
+        baby pointed us in the right direction and came with us. The shop (at a
+        campsite) was at the opposite end of the village a good half a mile
+        away. It was stocked with only limited provisions and nothing in the
+        way of dried food. So we bought some tins of meat, fruit, milk, bread
+        and biscuits etc. We were soon back with Hannah where we decide to cook
+        dinner by the side of the road. Another campsite at the hotel just
+        opposite proved useful for having a handy water tap so we managed to
+        have lunch and wash-up in the shade of a tree. The weather was now
+        becoming quite hot and shade was becoming important to us.<br />
+        <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><font size="3">We set
+        forth again for our
+        afternoons walk having consumed all the heavy tins except one. We
+        crossed the M74 via a tunnel and then a couple of steep but little
+        hills before a very pleasant walk through a deciduous wood and
+        alongside the river Moffat Water. The way then turned towards another
+        forest but first some cows were negotiated including a calf who had
+        mastered the art of crossing cattle grids and Veronica who had to
+        defend herself from the attacking ferocious beasts with a Spar shopping
+        bag! The way then came to the forest where a good track was followed.
+        This was a steady climbed for several miles. On the way we were passed
+        by a couple going the other way who informed us that a group of Spanish
+        scouts were heading for the same bothy as us. We also passed going the
+        other way a lone man walking probably doing the section from St Mary's
+        Loch for the day. At the end of the track the path continued through
+        forest alongside a stream. The weather was very warm and we were
+        drinking pints of water from the streams. At the end of the forest an
+        interesting section followed to Ettrick Head (the water shed).<br />
+        &nbsp;<br />
+        </font>
+      </td>
+      <td colspan="2">
+        <font size="3">
+          <div style="display: block; text-align: left;"><a
+            href="" imageanchor="1"><img alt="" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHAY_bn9yJa2k9FOTiLDGTMbV1rYI88r68XUZs5WpU_ggRY6qYsNam8y4MLL4ADUlvGyBwcCoajP_Oapnsptr4IwhcUqdZ9I6RoVRn8Pxw-BoMkSHbsoVNNNaekbP8-EFb9FBD6JoDArg/w324-h220-rw/" 
+            style="border: 0px solid ; width: 320px; height: 217px;" /></a
+            ></div>
+        </font>
+        Moffat Water just after Beattock<br />
+        <br />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <font size="3">
+          <div style="display: block; text-align: left;"><a
+            href="" imageanchor="1"><img alt="" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9UeyVrxdGRXDS6GsaWVRWv_8LMnVGwMjBbVqp3QIEOYQxoZtmPLRB6EJV4vr0Ws_tnrSlPQE8w_AOtqqtOUqTZiGkhe0zUYcKba2UGpc0ld7ruj71KQvvU9vAREUCJhWKmg8oGaErdsw/w325-h220-rw/" 
+            style="border: 0px solid ; width: 320px; height: 217px;" /></a
+            ></div>
+        </font>
+        Ettrick Water
+      </td>
+      <td><font size="3">The way went through a
+        narrow col and we followed paths
+        on the steep sides. Progress was good, but it was hard as it was steep
+        and very hot. Soon we reached the top where a sign was met telling us
+        we had passed out of Galloway and into The Borders. A good path first
+        went down the other side and then went into another forest with a good
+        track. We followed this on a nice slight decline until we arrived at
+        &nbsp;<span style="font-size: 13px;"><a
+          href="http://www.mappingsupport.com/p/gmap4.php?ll=55.357189,-3.292636&amp;z=13&amp;t=h"
+          style="color: rgb(68, 68, 68) ! important; text-decoration: underline;"
+          target="_blank"><font color="#ffffff" size="3">Over
+        Phawhope Bothy</font></a
+          ></span>&nbsp;. The
+        scouts were there enjoying themselves bathing in the
+        good stream and the sunshine. They were occupying a sleeping room one
+        end and we found a small room the by main door end with a bunk bed.
+        This proved ideal as Veronica and Hannah each took one of the beds
+        while I would sleep on the floor. We therefore had our own room which
+        we used for a wash to freshen up before making dinner, a second
+        cooked meal that day of plain spaghetti. </font>
+      </td>
+      <td colspan="3">
+        <font size="3">
+          <div style="display: block; text-align: left;"><a
+            href="" imageanchor="1"><img alt="" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjiHgcbqvtEJDPVpXLK-PzqGKn6MEYDBhlZNEeAUvo4yjpQD0ScCnYELperBm_zBnzT6_5CnlN5NyhJejHVCVxredwQN5vv2xe9KGia-jgC8eLYjIDpUAKLDY0wdgITotRkg4tbmsv1GY0/w326-h220-rw/" 
+            style="border: 0px solid ; width: 320px; height: 216px;" /></a
+            ></div>
+        </font>
+        Craigmichen Scar near Ettrick Head <font size="3"><br />
+        <br />
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4"><font size="3">The nine
+        scouts were very good
+        having a very young single leader. The leader spoke a little English.
+        They had with them a guitar and were planning a sing song in the
+        evening but in the end this did not materialise as they were busy
+        making a meal on top of the bothy wood stove and making friendship
+        bracelets. We went to bed at our usual early time and slept as well as
+        possible given now our feet were throbbing all the time except while
+        walking.<br />
+        <br />
+        </font>
+      </td>
+      <td>
+        <font size="3">
+          <div style="display: block; text-align: left;"><a
+            href="" imageanchor="1"><img alt="" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVUYBWIp1Gz0rZdw-dOmk5yuNsCKbrdDEi0dDFOXiprHH-yC_p_70dOPbIaqTYoCG70bRiBjUzepsJDLn76DIzAtwm20cIzoVrGELadZOROOkr1fWcyjKNFRKSyTIEy8M8ePZiJy047qg/w326-h220-rw/" 
+            style="border: 0px solid ; width: 320px; height: 216px;" /></a
+            ></div>
+        </font>
+        Over Phawhope bothy plus Hannah &amp; washing<br />
+        <br />
+      </td>
+    </tr>
+  </tbody>
+</table
+  >
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML21' locked='false' title='Day11' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day11"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+ alt="" border="0" />&nbsp;Day 11 Wednesday 9 July Over Phawhope Bothy to St Mary's Loch</span
+></div>
+<table style="background-color: #666666; color: #ffffff;" border="0">
+   <tbody style="font-size: 13px;" >
+<!--This is a comment. Comments are not displayed in the browser-->
+  <tbody style="font-style:italic;color:white;">
+    <tr>
+      <th>
+        <a><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-2uhYDzTX-c371fv-QiZdpMx9_1HrgTbfMFkH0rgu_HoW1UCH2eeku80WLmB_8bHGJ9FhNxH-pF_kPAIYdPr-JHsE3CEZXi19OGU5dI6pj9iGlkDBzZ7KoxHUm3I188YYUuUyLr4zGr0/w325-h220-rw/" alt="" /></a><br />
+        <div style="text-align: left;">Bridge at Riskinhope Hope</div>
+      </th>
+      <th style="text-align: left;">
+        <p>Today's walk started soon after we left the bothy with a 7 mile section on a minor road. We left before the scouts awoke the weather being clear blue skies and again getting very hot. We started well and were soon at the end of the road part where we turned to good paths through some hills. At the start of the path a couple were just starting on a days walk to St Mary's Lock. After an initial short but steep section the path was pleasant eventually dropping down to a stream and bridge at Riskinhope Hope.</p>
+        <p>It was about 1230 by now so we decided to have an early lunch with what ever we could rummage together before climbing the last hill on this short day. We soon made it up the following hill and shortly afterwards a forest track lead us down towards Tibbieshiels Inn by the loch. We met a SUW ranger at the SUW sign here and had a chat with him. This turned our to be fortuitous as he mentioned he was building another bothy shortly after Traquair as there was not many bothies on this Eastern section. This sounded ideal as from Traquair to Melrose was going to be a long stretch and the bothy would help to cut this down..</p>
+      </th>
+      <th>
+        <div style="display: block; text-align: left; margin-left: 9px; width: 344px;"><a><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyCQzRIuCjKUdSAM8UcAIhzX6XaJcrIJifuXmG77sBTiDIO-q-CXAetN0sVo_UlA0NyMyeydwVs-XZrf_erF7VkJhh0uuC-5A3w37fMh9BwtZKrGEC98WvijExq2RGv1jd_REyLbbUbBw/w326-h220-rw/" alt="" /></a><br /> St Mary's Loch</div>
+      </th>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <div style="text-align: left; margin-left: 0px; width: 337px;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMLGqShFNropW2S9NukcbidU7KtipvB51gN29-aRsKO1e126ewlFrHjv4KQfujT3lur-V1bEIghzuCbai_Lf7f8vqsIx3Y16YCcVNyTlzd_e3cV4S-5ZQtL3drMTepSGByQJSDfIv0bnQ/w329-h220-rw/" alt="" /></a><br /> Tibbieshiels Inn at St Marys Loch</div>
+      </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 218px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5DpzZmhK_AoXtu8JH9vH1H91VJOOvD3_70U1ejHxrCVwBLv0z75JHWj7ADmCg24vowQGJV0iYLHbiWaN8HdwpwZRB2MfB8qY7VVHuvwMclubg7vyO3Te3kJeoAoGbRicX-KdedPzyMhk/w150-h220-rw/" alt="" /></a><br /> Statue of James Hogg (Shepherd &amp; Poet) at St Mary's Loch</div>
+      </td>
+      <td>
+        <p>We then made for the bar in the Inn to quench our thirst with some beer. The Inn was rather too expensive for us (&pound;23 each), so we decide to camp in the Inn's garden for &pound;2 each instead and have a good bar meal in the evening. The weather was still very hot so we pitched our tents and then took a stroll to the loch. There were many day trippers here with children enjoying themselves on a small beach and swimming in the loch. A cafe was on the main road and we first had drinks/ices followed by bacon/sausage rolls which were excellent value. We bought some post cards and wrote them in the shade of some trees sitting by the loch. We tried to buy some plain rolls from the cafe for the next day but they declined being short themselves. I had a look at the monument to James Hogg a famous shepherd and poet and took some pictures in this beautiful spot.</p>
+        <p>We then returned the couple of hundred yards to the tents for more relaxation and washed in the Inns staff toilet. The bar meal we had in the evening was again excellent quality and very good value. An elderly gentleman, somewhat eccentric, had also pitched his tent there and we has a chat to him in the bar. Veronica had a difficult phone call to Melrose SYH from the Inns phone but hoped the message got through and that our places were booked.</p>
+        <p>We managed to buy half a frozen loaf of bread of the Inn keeper which would be useful for the next day. Feeling relaxed and better for our washes and the meal we retired early, ready for a long next day.</p>
+      </td>
+      <td>
+        <div style="display: block; text-align: left; margin-left: 10px; width: 319px;"><a><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKfSrpB4LrzrrQ8bkcHAmiBxLJvUg8-HyUjXaImTdOEZb1c1sLIe_0tYRI9fDtOVZjvABa_AIhphjSd1WhYHwCbOKS0-GQAPaSLwnKA3_7GD6FAmMem2p2nYNfh7WV7HSvnxwzPZL64go/w326-h220-rw/" alt="" /></a><br /> St Mary&rsquo;s Loch</div>
+      </td>
+    </tr>
+  </tbody>
+</tbody></table>
+<a href="#top">Return to top</a>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML22' locked='false' title='Day12' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day12"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day 12 Thursday 10 July St Mary's Lock to Traquair New Bothy</span
+  ></div>
+<table
+  style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);"
+  border="0">
+   <tbody style="font-size:13px";> 
+    <tr>
+      <td colspan="3"><br />
+        We left early as usual in bright sunshine with another
+        hot day in prospect. The way first followed the length of St Mary's
+        Loch for 4 miles on a good path although we managed to miss the way at
+        a house at Bowerhope. The route then crossed the main road and on to a
+        good path into the hills. Two ruined towers were passed on the way the
+        final one Blackhouse giving its name to the present farm. A short
+        stretch on a rising grass track through a forest then brought us to
+        more open hills. We stopped at the edge of the forest for lunch early,
+        as this was to be a short day with plenty of time. After lunch we
+        continued on good paths passing a elderly group of 3 women and a man
+        who were on a days walk to St Mary's Loch. They were very interested in
+        what we were doing. The good path continued over a couple of slight
+        rises before descending towards Innerleithen a town one and a half
+        miles north of Traquair and off the route. The chat with the elderly
+        group convinced me that I would have to make the trip to Innerleithen
+        in order to stock up with food as we were very low. The prospect of
+        another "Bean Feast" dried meal was not relished. We were soon at the
+        end of the path with a mile and a half off the road to Traquair. We
+        arrived
+        at Traquair at 1500 so I left the other two with the packs and in the
+        shade a hundred yards up the track towards the bothy.<br />
+        <br />
+      </td>
+      <td>
+        <div style="display: block; text-align: left;"><a
+          href="" imageanchor="1"><img alt="" 
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgpYrGwW3sFpUIMRfJcJC3TBc5ykChqulcS3A0LOqmw77GwYyVJmUNpjs2AsaKEp-ys6GtSRBT0W12Pb4CynpJZULmU0pTzYjsFqGzAD9gCvyF_mqjygmGHHtkPc6acbWLqaMrZ8JNid4Y/w328-h220-rw/" 
+          style="border: 0px solid ; width: 320px; height: 214px;" /></a
+          ></div>
+        View of Traquair &amp; Innerleithen from Blake
+        Muir<br />
+        <br />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <font size="3">
+          <div style="display: block; text-align: left;"><a
+            href="" imageanchor="1"><img alt="" 
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNVrpAH-QVXp5wIywfaeO6HFqBzrgTCuJYbDH69GJfoyl3om0kU1V2jpYFJ1kmYjBZ0TN77ERAkm30cjOo6YP_5_HvDlmnt6UoGhtLdB0jKuyqWkvX5yh4ZU5R47RamWQKRfJDxYC8YlY/w320-h220-rw/" 
+            style="border: 0px solid ; width: 320px; height: 220px;" /></a
+            ></div>
+        </font>
+        The new bothy at near Traquair &amp; Hannah<br />
+        (We were the first occupants)
+      </td>
+      <td>The round trip to
+        Innerleithen took 90 minutes and was
+        successful in that there was a good small Co-op supermarket where
+        everything we wanted was purchased. it would have been nice to buy more
+        but having to carry it back and then onto the bothy limited what was
+        possible. So after returning at 1630 we were soon on the moved again.
+        The bothy was said, by the ranger we had spoken to at St Mary's, to be
+        about a mile up the track and into a forest. We passed a house on the
+        way where we were offered water by a lady for our bottles but had to
+        decline as we could not carry any more. We just hoped this new bothy
+        was near a good stream. A steep climb up a hill which we could have
+        done without brought us to the forest and to our relief we found the
+        bothy in a clearing just to the right of the path. The bothy (latter
+        named &nbsp;<span style="font-size: 13px;"><a
+          href="http://www.mappingsupport.com/p/gmap4.php?ll=55.586903,-3.018978&amp;z=17&amp;t=h"
+          style="color: rgb(68, 68, 68) ! important; text-decoration: underline;"
+          target="_blank"><font color="#ffffff" size="3">Minch
+        Moor Bothy</font></a
+          ></span>&nbsp;) was like a
+        Canadian log cabin of very solid construction. It was excellent for our
+        purposes and we were soon settled in. Hannah volunteered to find some
+        water and soon she was shouting back to us from a good clear stream a
+        couple of hundred yards further on. What a relief! We had dinner and
+        enjoyed the beautiful sunset looking over Innerleithen before going to
+        bed.<br />
+        <br />
+      </td>
+      <td colspan="2"><font size="3"><a
+        href="" imageanchor="1"><img alt="" 
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfH6aFX3Ou03m-7xS7_S4ga-ptC__H2Cjl3IIpcOgbVVGYwK9Kyvi0TJpMIe2O8yw-zZWFPznvWZrPqZniJjikR5C5px-szW05yBcsREhh2Qo_W_naV1rkaFyFM6Yqu2fcpzIfe0zhZZw/w326-h220-rw/" 
+        style="border: 0px solid ; width: 320px; height: 216px;" />
+        </a
+          ></font>Evening view of Innerleithen from the new bothy 
+      </td>
+    </tr>
+  </tbody>
+</table
+  >
+<div style="display: block; text-align: left;"></div>
+<a href="#top">Return to top</a><br />]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML23' locked='false' title='Day13' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day13"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day 13 Friday 11th July Traquair Bothy to Melrose (16 miles)</span
+  ></div>
+<table style="background-color: #666666; color: #ffffff;" border="0">
+  <tbody>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC7Y30U_wvm8dVcd6lRKbqYv3WFbEMTMnUxv9HksizQjko5wM89jBQokIcI6VV42XTzLrnu7U_mwjTWEIwjwcPvWMRXpnHkWF-BCrFjFv7jje20zJ-sVvqiK4R0iJX5htMzAMvkAEvdFE/w328-h220-rw/" alt="" /></a></div>
+        The Three Brethren
+      </td>
+      <td colspan="7">We were pleased that we had a mile less than originally planned and some climbing under our belt as this was to be a long day. Just as we were about to leave the bothy low and behold who should be passing but the Dutch couple. We had not crossed paths for five days. They apparently had taken a rest day somewhere. We were on our way early (0815) and continued on the forest track which was still going up. We passed the Cheese Well on the way before crossing Minch Moor. On leaving the forest we had two hills to climb before passing the turning off to the SYH at Broadmeadows. This was possible place to stop on our original itinerary but fortunately the ranger we met put us off telling us of the 600 ft decent to get to it which would have to be recovered first thing in the morning.<br /><br /> After passing this junction the way climbed to the top of Three Brethren. This hill has three large cairns and a trigonometry point on the top. Just before we reached the top our Dutch friends left rather pointedly we thought. We had a break here while a single man joined us who we had seen climbing an earlier hill. He looked like a Corbett bagger.<br /><br /></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZHsjxFeZGy_G-6st4z_5j5IWMd6AXArpyKePV9vz9q6HU1A-tpuV2X-GgQNPtIh3tkd6gBqDnTt-vLuYkycLzWdDvXJVl3Cm1BzbbLV_omQQOrqKX-qlaVZjGJZYL3pPxcxVl_knLCVU/w325-h220-rw/" alt="" /></a></div>
+        Eden Hills from near Galasheils
+      </td>
+      <td>We left the top and the way descended on a good track through trees to eventual meet a main road. The way crossed this and the River Tweed on an exquisite bridge. Shortly after this we stopped for lunch under some trees for shade and before a climb over the last hill on the day. Low and behold who should pass again none other than the Dutch couple. They continued after a brief exchange and this was the last we saw of them.A stiff climb up the hill brought us to an open hill farm and the way carried on until we were descending with Galashiels before us. We soon reached the town after a minor SUW diversion. Luckily we met a man who advised us of a shop not far off the way in the town. After passing through a park we found the shop and gorged ourselves on cold drinks and ices.It was heaven! We still had a good five miles to go the Melrose so we set forth again the way skirting the town and crossing a hill with a view point of the Eden Hills.<br /><br /></td>
+      <td colspan="3">
+        <div style="display: block; text-align: left; font-size: medium;"><a><img style="border: 0px solid; width: 320px; height: 217px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjSDCIOaGOjbWDokhg4V5mIXUj0TjyCtUxHcskEbnij8-B2HTiAlKr22nNpXCABWhlpEBOVGZTQwyi_IGSxNMKQbmzjKhp1oZWJjOjS8P_7UViQqAzjOsSfmrrmpbcajVXK8s-cZl5fDn0/w324-h220-rw/" alt="" /></a></div>
+        Bridge over the River Tweed near Yair
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQLLTI2jNRvAHnhdEBJliHdxEcXF-MMf7JEnY03sS1w4lCZESoOblDN7jYBKysvljWynbIned73G6pbENf3rnsh2yR9A573QE59FW9Oz4nCRbv__UsZ_QF4McMGvMJIM6K1aztbhf9alU/w326-h220-rw/" alt="" /></a></div>
+        River Tweed near Melrose
+      </td>
+      <td colspan="3">Then the path followed the River Tweed to Melrose which include a very uncomfortable section on a tarmaced path (disused railway) which was straight for a good mile. The end never seem to get any closer but finally we reached the pedestrian suspension bridge we needed to cross the next day. We were then soon on the outskirts of Melrose and not finding any signs to the SYH. After a minor detour we found the SYH and were soon checked in (they had got our booking after all). The hostel contrary to previous beliefs served both dinner and breakfast. So we ordered both. The showers were great and soon we were ready for dinner at 1900. Dinner was fine and we met there a very nice Dutch couple and a Belgium trio two of two boys and a girl (sister of one). The conversation was good and revealed that one of the Belgian lads knew Frank Prescot (now at Monsanto Brussels) who I used to work with at Chesterford Park.<br /><br /></td>
+      <td colspan="2">
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 215px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi0t0Uvt-RW8DKav8ExC_yP4FzHhqczonQEEwJyBEX_h3FAnmpTbkU56RKZyVlbTMdKt46tp5WI9rgIy2Drlfnd8_wp2ClUZq8RsRL6fykKVKJ7aXAvt_ctVasIXjB5CAVuQAtEvbCRTts/w327-h220-rw/" alt="" /></a></div>
+        Youth Hostel at Melrose
+      </td>
+    </tr>
+    <tr>
+      <td colspan="5">After dinner I decide I would like to see a bit of the town (Veronica and Hannah preferred to rest) and have a beer. The town is very nice and a place to revisit another day with more time. Back to the SYH and to bed early again.<br /><br /></td>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 218px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivvvW4Mwz8LMaE1MyFwvy9nUpAjY_2LnyvNamY3GbshwMf289LKpPp-wJbIKctrirwmjG6xIRa5xx0__Y6RV_uLuAq3c0m-vFasLtTnG9MTpXzOR4yuCAEHUOmmUfVIQmZDCVYslh0BZc/w323-h220-rw/" alt="" /></a></div>
+        Flower bed in Melrose
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: block; text-align: left;"><a href="#top">Return to top</a></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML24' locked='false' title='Day14' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day14"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day 14 Saturday 12 July 1997: Melrose to Lauder (11 miles)</span
+  ></div>
+<table style="background-color: #666666; color: #ffffff;" border="0">
+  <tbody>
+    <tr>
+      <td colspan="2">
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGmrOoK7roehfDwFrf84iYSvu4EXiSIO7rquXcU7HjX9QZUHh1L3aN6Cb-Vogptrp6mUKaQKgYKsV2G5JkDPyl2yOeeEbpQCqcuzzdSTNoiDhL8LCAWIS7mPheR0424NpWn4iwgUxABm4/w329-h220-rw/" alt="" /></a></div>
+        Suspension bridge near Melrose
+      </td>
+      <td style="width: 881px;">The morning started with good weather again. A good continental breakfast at the hostel and we were away by 0930, which was late for us this not mattering as we had a short day. We went back to the suspension bridge over the river Tweed via the town. The way climbed gently through some hill farms to a small wood. Turning here we arrived at the start of a good Roman road which went for several miles crossing two minor roads and in a straight line. We passed an elderly couple from Hexham on holiday and had a chat just before stopping for lunch in the shade of trees by a farm. After lunch the way turned to go through some more low hill farming land crossing another minor road before climbing a small hill (Chester Hill). The Lauder golf course was then followed down a small valley to Lauder. The weather had by now took on a stormy look and one or two spots of rain were felt. We decided to head straight for the campsite on the Southern edge of the village. After a roundabout route we arrived at the campsite (1500) at Thirlestane Castle to be greeted by very nice camp wardens Pat and John. With heavy rain imminent Pat let us get on with erecting the tent which we just managed to do before we had a heavy shower. After the shower was over we went back into the village to get supplies before the shops closed. There were two small supermarkets so we stocked up with drinks and some food. The campsite was very well looked after (&pound;3 each for backpackers) being very clean and with good showers/washing-up facilities.<br /><br /></td>
+      <td style="width: 319px;">
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwnUzDuFtxIigrXOTHpqTxhQ1wjlulwlSKdpGd93cDpiHmQTm7PXwHaK91XT-RyaU2CUJZtoZQSBvR3JMwloPJ3ooEUfZD63wjQ24-RbeTLPXJ_KlEKD1loZ0gJoIMiHFE5cDGzXkiI9U/w326-h220-rw/" alt="" /></a></div>
+        Thirlestane Castle
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a href="
+          "><img style="border: 0px solid; width: 320px; height: 216px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGPAc7N_i9804bEt-EzdDQzMUvmxNmZmIxlOnWqb0H2rJlmun831Wsd-dvJAn0qJsIa770rcyBJIMVcfW0kUSZHCBfSkEwJVqjRW5hDcUt8CkzsXw9_UHwG-hzDYUk-4l6SkbMAnARbyw/w326-h220-rw/" alt="" /></a></div>
+        Campsite at Lauder
+      </td>
+      <td colspan="3">It was here that we decided to implement a plan we had thought of at the beginning. Veronica and Hannah were tiring because of the long wet days of walking so we decided to ring Paul to come and meet us at the end of the next day at Longformacus and return us to Lauder. We would then return on the final day to Longformacus and walk the last 17 miles in one go. This would mean that the final two days would be pack free except for one pack with essentials like lunch and waterproofs. Paul was happy to come up from Cambridge (a 6 hour drive) so we looked forward to seeing him. He would be able to share the dome tent with Hannah while Veronica could squeeze into the ridge tent with myself.<br /><br /> We cooked our dinner at the campsite before showering and making our way to bed.<br /> </td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: block; text-align: left;"><a href="#top">Return to top</a></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML25' locked='false' title='Day15' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day15"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day 15 Sunday 13 July 1997: Lauder to Longformacus (15 miles)</span
+  ></div>
+<table style="background-color: #666666; color: #ffffff;" border="0">
+  <tbody>
+    <tr>
+      <td style="width: 296px;">
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivdTpV6LtXHcUT-skj7HaCwq1_giGF_hkzf-6WagWp4-USJK1jrlcwyPFhAcAfzklwHpMuaE3QIT7xJq63PJ38AfaNgiwSUg2v03-5gDTconodGxPzxAs4ZgWSJyh8z4Oc_mBqbPKknuI/w328-h220-rw/" alt="" /></a></div>
+        Bridge at Snawdon Burn.
+      </td>
+      <td style="width: 578px;" colspan="3"><br /> We arranged to meet Paul at Longformacus at 1600 so with 15 miles in prospect much of over moor land we started early. The weather was damp but not raining. The way first passed Thirlestane Castle before climbing into the hills. The path then carried on over a hill to a bridge on a stream built by the army over Snawdon Burn. The weather had deteriorated by this time to a steady rain so we donned our water proofs. Crossing the bridge the way headed up to a small wood which we went through and then came to a good track. This track was then followed across the grouse moors. Just after passing a barn the rain stopped so we had elevenses (unusual as we were usually committed to walking non stop until lunch time) and dried out a little. We saw in the distance a large group of people on the top of Twin Law the high point for the day.<br /><br /></td>
+      <td>
+        <div style="display: block; text-align: left;"><a>&nbsp;</a></div>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 217px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_-zsFCE2nVF77LjIxAt1DXGR83Pf5sEIKVv7uX7RJLzNxiJPdZM2Wnxr_uj2o7Y1BKjkgv10CgDQ3UnCR-GsSpwBXmoJtkA2KQJfUWHgHGZrR-YcG9xWCJNMVRnlJYih64hHtcMGKB4w/w326-h220-rw/" alt="" /></a></div>
+        Twinn Law
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 296px;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVwroRV4uMQTOTrmyZ_r5o4hoy8_HNk_amMj-ovKEaLljrw1PCy3cQkulnohP1bVP8ALkusj0fv6jo8PYZa9s2dsYEcngF2qh1rEgksxBNb7VTzpkMOTa01fEMl3X6lIB_KR9hf_q27dY/w329-h220-rw/" alt="" /></a>Sheep crossing stream before Longformacus.</td>
+      <td style="width: 578px;" colspan="3">
+        We continued along the good track and arrived at the top of Twin Laws in time for lunch. Two large cairns were on the top so we used one while another group had lunch around the other. The weather had cleared up but in the distance look extremely threatening. We left making our way on the track but before too long the threatening thunder storm arrived. The waterproofs earned their keep as it lashed down. The way descended gently meeting a road at a reservoir. The road was then followed all the way to Longformacus which we arrived at 1515. Paul was not expected until at least 1600 so we went up the road to find some seats to rest on. <br />
+        <div style="display: block; text-align: left;"><a href="https://content.wuala.com/contents/mawebb124/Photos/Pictures-800x480/Mike%2BVeronica/1997/1997-06-29%20to%201997-07-14%20Southern%20Uplands%20Way/Twinn%20Law.jpg?&amp;key=j5Ef0qG3JayF">&nbsp;</a></div>
+        <br /><br />
+      </td>
+      <td>
+        <div style="display: block; text-align: left;"><a style="font-size: medium;" href="https://content.wuala.com/contents/mawebb124/Photos/Pictures-800x480/Mike%2BVeronica/1997/1997-06-29%20to%201997-07-14%20Southern%20Uplands%20Way/Twinn%20Law.jpg?&amp;key=j5Ef0qG3JayF"><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4q3qfsnFfzSRWJc7y6dd7enrHc8uk_uYpmqCQ-BcdxkFivSTbBZhmDNxs4oyxMpQJezSwoj3PjUsfPQaPgAlMZgdPFsokjeWhttnp1IvZChOidYQ8dL83qFYXsdST2UbCEXvW6O_60sg/w328-h220-rw/" alt="" /></a><br /> Longformacus House</div>
+        <div style="display: block; text-align: left; font-size: medium;">&nbsp;</div>
+      </td>
+    </tr>
+    <tr>
+      <td style="width: 578px;" colspan="5">A local retired farmer joined us and we had a long chat about Rover cars and the decline of the village. Veronica went back to the meeting place (by the SUW sign) just before 1600 and Paul duly arrived safely at about 1630. We were please to see him as not only was it a remote meeting place but he had driven six hours&nbsp;including&nbsp;through&nbsp;torrential&nbsp;rain/floods to get to us.<br /><br /></td>
+    </tr>
+    <tr>
+      <td style="width: 578px;" colspan="5">We were soon enjoying the luxury of a car ride (for the first time in two weeks) back to Lauder. Paul had done an excellent job in bringing supplies with him so we decided to make dinner at the campsite. Afterwards we left Hannah to rest while the three of us wandered down to the nearest bar to enjoy a beer and some crisps. This relaxed us nicely and soon we were back and in bed ready for our last day.<br /><br /></td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: block; text-align: left;"><a href="#top">Return to top</a></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML26' locked='false' title='Day16' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Day16"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Day 16 Monday 14 July 1997: Lauder to Cockburnspath (17 miles)</span
+  ></div>
+<table style="background-color: #666666; color: #ffffff;" border="0">
+  <tbody>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 216px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQNgO_zPUFpbH5Tm2OmLXaJNuJu8Il6zmegd3AcrN8EVhRNuT2w4Istojiu36MCTRrPl_nS8btOypgAyBwHWnThJmBXwC2DLQm6L8TvM7ZxHZ1P68urNMqRcBHhyphenhyphenTI36MMN5mG5PNVlzo/w149-h220-rw/" alt="" /></a></div>
+        Abbey St Bathans.
+      </td>
+      <td><br /> The weather was now perfect, sunny but with some occasional cloud to keep us cool. Paul returned us to Longformacus after we cleared the camp in dry conditions. He left us at 0930 and we arranged to meet him in Cockburnspath at 1700. We left via a minor road for a mile and then ascended a small hill via the usual cows. This then descended back to the road which we crossed into a very&nbsp;pretty farming area near Rigfoot farm. It was here we saw a pair of large birds of prey (probably buzzards). The way then climbed another small hill before descending to Whiteadder Water which was followed on a track through woods to reach Abbey St Bathans. There used to be a private Youth Hostel here but it had recently closed. We crossed the river on another excellent pedestrian suspension bridge and the SUW took a recent realignment alongside a small stream. We stopped for lunch near here in the shade by some trees. A flock of sheep amused us as they all tried to filter through a gap from one hill to another some of them not being able to make their minds up.</td>
+      <td colspan="6">
+        <br />
+        <div style="display: block; text-align: left; font-size: medium;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIkb2ges4fGUJkVokGToFPgoSqbgF5KA0GGMkdZskkm5_c3a9o2CRoZ9_u01pRLqHLmY1FdNcPOLQiCJqxiuXbJ0cz7-LXWqtXwVGIC1u3wZym77rpF1QttWqT66M9W5S-EuvbLQGPY0w/w329-h220-rw/" alt="" /></a></div>
+        Signpost at Abbey St Bathans <br /><br />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfVONZAdUynMdS9BXKbv04HVMJa4TYodyNgJprCxu8kNkSogCGYM8PH9v0Caqwu-wcTESX0ndagsN_ka3XXCfmYwyMMzyBFR3fyjQc6vpYN5-GCXFVCJSqoMk5Nm3I3FTvOWlkK2O-g8A/w329-h220-rw/" alt="" /></a></div>
+        View near Rigfoot farm
+      </td>
+      <td colspan="6">We then continued after lunch, the route rejoining the original path. The way then passed through some farming areas crossing two minor roads. Then a good track continued past further farms and turning into a road coming eventually to the A1. Crossing the A1 (single carriage way) the route then after a short way first followed the main railway line then crossed it into woods. A good green track was then followed with some climbing to give us our first siting of the long awaited North Sea. At last! The path then descended coming out at Pease Bay. This is a ghastly caravan holiday camp in a small bay. Rubbish was everywhere and we move through quickly along the road towards Cockburnspath only 2 miles to go! Paul was along the road after a couple of hundred yards to meet us, providing essential supplies to complete the final mile of the route (shandy). He had just arrived having been to Edinburgh for the day.<br /><br /></td>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVMnh5-hhPGj50ki7HZTmKvbdCI4qGDEwFae6zB9ENuPDmRRMWDCXm7P43e1BcxJnkCq_0oe8Lg8MgaDUVXgM8ne_dFPFNV_sAPpelV1tgAnF2YYFE43R5FQ7FxHAKPDfYjtJ8XtXdIS4/w329-h220-rw/" alt="" /></a></div>
+        View near Rigfoot farm
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 213px; height: 320px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhbg5XhT9i8OPfMQp6ncFKo3eyoERLIrDYZCmwZ8FCV6n3UoZNt1-z3GWQ_Xw9vuSkCdDuqhMUUTCyrxxgWr8PGTBJuag7i2QR2h4LrLnU1ae-ZRpS6hPDcrak9xOi_-FdrhshyphenhyphenvEocXCA/w146-h220-rw/" alt="" /></a></div>
+        The End!
+      </td>
+      <td colspan="3">The final two miles followed the coast line on cliffs to start with passing the small fishing Cove Harbour. The way then inexplicable turns inland re-crossing the railway line and the A1 via a tunnel to come to Cockburnspath. We made our way to the centre passing on the way a group of runners who had relayed the SUW in 4 days! After checking with the official guide the end was confirmed as the ancient cross. There was a small shop there in which we bought drinks but that was it. No souvenirs, no tourists, hardly a fitting end for such a walk. The contrast with the Wainwright walk end at Robin Hoods Bay could not have been more.<br /><br /> We changed our clothes and put on more comfortable footwear and left at 1700. We were of course only minutes from the A1 so we were soon on our way home to Cambridge. We stopped about 1830 at the Oak Inn just off the A1 for a meal (not very special and poor value) and once for petrol and driver swap arriving home at 1155. We had achieved it!</td>
+      <td colspan="4">
+        <div style="display: block; text-align: left;"><a><img style="border: 0px solid; width: 320px; height: 214px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhusiUWeL-wziIL8ygH5z5M66QA_J-1joYoik6c07hH7WO7T_oIxyU_NNVM12YlGI91-UwcGzyQQyfHnJbrEK72UJDdBmdZB7MZg9Xl9omnwWgua3mWU-asziLMUSO3_k34QtDmFpzJlWQ/w328-h220-rw/" alt="" /></a></div>
+        The End!
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div style="display: block; text-align: left;"><a href="#top">Return to top</a></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML8' locked='false' title='Conclusion' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="conclusion"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;Conclusion</span
+  ></div>
+<div style="display: block; text-align: left;">&nbsp;</div>
+<table
+  style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255); width: 1202px; height: 779px;"
+  border="0">
+  <tbody>
+    <tr>
+      <td colspan="1"><br />
+        It had been hard but we all enjoyed it being proud of our achievement.
+        Its not a walk we would like to do again in a hurry but that's because
+        there are so many others to do. We obviously compared it with the
+        Wainwright Coast to Coast which we probably enjoyed more. This was
+        because on the SUW we met so few people and this made for long days.
+        Often on the Coast to Coast, walking with others helped to make you
+        forget the sore feet! The bothies were a highlight and in particular
+        the White Laggan bothy which is an exquisite location made all the
+        better for us by having it to ourselves. The log fires will always be
+        remembered!<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1">Fourteen days was really enough for
+        our party and it was fortunate that we were able to call on Paul to
+        help us for a couple of pack free days at the end. With the long days
+        both in time and in distance and not having any complete rest days this
+        lead to a slow deterioration of our bodies. A couple of rest days would
+        have been useful. Also the lack of decent food for some of the days did
+        not help. It is difficult to know how this could have been improved as
+        there was so little opportunity on some parts of the way to buy food.<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1">We were very fortunate with the
+        weather. The rain we did have was at the most only for a few hours and
+        we always managed to dry out soon afterwards. The midges at Glen Trool
+        were evil and took a lot out of us. We were however lucky in that
+        elsewhere the midges were not too bad or avoidable.<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1">Where next one might ask. Well there
+        are plenty of week long walks and this seems the most likely length for
+        the future. The West Highland way is an obvious attraction but some
+        simpler routes like the White Peak Way in the Peak District are also
+        attractive propositions.<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1">The feet and the legs take about two
+        weeks to recover after such a walk but this will be helped greatly this
+        year as we are going on a Norfolk Broads boating holiday only three
+        weeks after the SUW. We are going with my Mum &amp; Dad, Jane
+        (Sister), Sarah and David(niece &amp; nephew). Being on a boat only
+        42 feet long will obviously limit the amount of walking we do so a full
+        recovery from the SUW is assured!<br />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1" rowspan="1">
+        <div style="text-align: right;">&nbsp;</div>
+        <h1 style="display: block; text-align: center;"><span
+          style="text-decoration: underline;"><img alt="Certificate" 
+          src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/1997-07-14%20The%20Southern%20Uplands%20Way-MAW.jpg" /><br />
+          Official certificate</span
+            >
+        </h1>
+        <div style="display: block; text-align: left;">&nbsp;<br />
+        </div>
+      </td>
+    </tr>
+  </tbody>
+  <p></p>
+</table
+  >
+<div style="display: block; text-align: left;"><a href="#top">Return to top</a></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML9' locked='false' title='Links' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<p><a name="Links"></a></p>
+<div><span
+  style="display: block; text-align: left; color: rgb(255, 255, 255);"><img src="https://raw.githubusercontent.com/theorbitofmercury/Odd_pics/refs/heads/main/waymark.gif" 
+  alt="" border="0" />&nbsp;References(new windows)</span
+  ></div>
+<div>
+  <table
+    style="background-color: rgb(102, 102, 102); color: rgb(255, 255, 255);"
+    border="0">
+    <tbody>
+      <tr>
+        <td><font color="#ffffff"><br />
+          <a href="http://en.wikipedia.org/wiki/Southern_Upland_Way"
+            style="color: rgb(68, 68, 68) ! important; text-decoration: underline;"
+            target="_blank"><font color="#ffffff" size="3">Southern
+          Upland Way - Wikipedia, the free encyclopedia</font></a><br />
+          <br />
+          </font>
+        </td>
+      </tr>
+    </tbody>
+  </table
+    >
+</div>
+<div style="display: block; text-align: left;"><a href="#top">Return to top</a></div>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+        <b:widget id='HTML2' locked='false' title='Transparent Line' type='HTML'>
+          <b:widget-settings>
+            <b:widget-setting name='content'><![CDATA[<table style="text-align: left; width: 693px; height: 450px;"
+  border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td></td>
+    </tr>
+  </tbody>
+</table>]]></b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+        </b:widget>
+      </b:section>
+    </div>
+    </div>
+    <div class='tabs-cap-bottom cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+
+    <div class='main-outer'>
+    <div class='main-cap-top cap-top'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+
+    <div class='fauxborder-left main-fauxborder-left'>
+    <div class='fauxborder-right main-fauxborder-right'/>
+    <div class='region-inner main-inner'>
+
+      <div class='columns fauxcolumns'>
+
+        <div class='fauxcolumn-outer fauxcolumn-center-outer'>
+        <div class='cap-top'>
+          <div class='cap-left'/>
+          <div class='cap-right'/>
+        </div>
+        <div class='fauxborder-left'>
+        <div class='fauxborder-right'/>
+        <div class='fauxcolumn-inner'>
+        </div>
+        </div>
+        <div class='cap-bottom'>
+          <div class='cap-left'/>
+          <div class='cap-right'/>
+        </div>
+        </div>
+
+        <div class='fauxcolumn-outer fauxcolumn-left-outer'>
+        <div class='cap-top'>
+          <div class='cap-left'/>
+          <div class='cap-right'/>
+        </div>
+        <div class='fauxborder-left'>
+        <div class='fauxborder-right'/>
+        <div class='fauxcolumn-inner'>
+        </div>
+        </div>
+        <div class='cap-bottom'>
+          <div class='cap-left'/>
+          <div class='cap-right'/>
+        </div>
+        </div>
+
+        <div class='fauxcolumn-outer fauxcolumn-right-outer'>
+        <div class='cap-top'>
+          <div class='cap-left'/>
+          <div class='cap-right'/>
+        </div>
+        <div class='fauxborder-left'>
+        <div class='fauxborder-right'/>
+        <div class='fauxcolumn-inner'>
+        </div>
+        </div>
+        <div class='cap-bottom'>
+          <div class='cap-left'/>
+          <div class='cap-right'/>
+        </div>
+        </div>
+
+        <!-- corrects IE6 width calculation -->
+        <div class='columns-inner'>
+
+        <div class='column-center-outer'>
+        <div class='column-center-inner'>
+          <b:section class='main' id='main' name='Main' showaddelement='no'>
+            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
+              <b:widget-settings>
+                <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                <b:widget-setting name='showCommentLink'>false</b:widget-setting>
+                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showAuthor'>false</b:widget-setting>
+                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='reactionsLabel'/>
+                <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                <b:widget-setting name='showLabels'>false</b:widget-setting>
+                <b:widget-setting name='showLocation'>false</b:widget-setting>
+                <b:widget-setting name='showTimestamp'>false</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                <b:widget-setting name='showReactions'>false</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main' var='top'>
+  <b:if cond='!data:mobile'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.isDateStart and not data:post.isFirstPost'>
+          &lt;/div&gt;&lt;/div&gt;
+        </b:if>
+        <b:if cond='data:post.isDateStart'>
+          &lt;div class=&quot;date-outer&quot;&gt;
+        </b:if>
+        <b:if cond='data:post.dateHeader'>
+          <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+        </b:if>
+        <b:if cond='data:post.isDateStart'>
+          &lt;div class=&quot;date-posts&quot;&gt;
+        </b:if>
+        <div class='post-outer'>
+          <b:include data='post' name='post'/>
+          <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+        </div>
+
+        <!-- Ad -->
+        <b:if cond='data:post.includeAd'>
+          <div class='inline-ad'>
+            <data:adCode/>
+          </div>
+        </b:if>
+      </b:loop>
+      <b:if cond='data:numPosts != 0'>
+        &lt;/div&gt;&lt;/div&gt;
+      </b:if>
+    </div>
+
+    <!-- navigation -->
+    <b:include name='nextprev'/>
+
+    <!-- feed links -->
+    <b:include name='feedLinks'/>
+
+  <b:else/>
+    <b:include name='mobile-main'/>
+  </b:if>
+</b:includable>
+              <b:includable id='backlinkDeleteIcon' var='backlink'/>
+              <b:includable id='backlinks' var='post'/>
+              <b:includable id='comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='data:mobile'>
+      <h4 id='comment-post-message'>
+        <a expr:id='data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <h4 id='comment-post-message'><data:postCommentMsg/></h4>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+              <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+              <b:includable id='comment_count_picker' var='post'>
+  <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+    <data:post.commentLabelFull/>:
+  </a>
+</b:includable>
+              <b:includable id='comment_picker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threaded_comments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+              <b:includable id='comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+      <h4><data:post.commentLabelFull/>:</h4>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <span class='paging-control-container'>
+          <b:if cond='data:post.hasOlderLinks'>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'><data:post.oldestLinkText/></a>
+              &#160;
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'><data:post.olderLinkText/></a>
+              &#160;
+          </b:if>
+
+          <data:post.commentRangeText/>
+
+          <b:if cond='data:post.hasNewerLinks'>
+            &#160;
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'><data:post.newerLinkText/></a>
+            &#160;
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'><data:post.newestLinkText/></a>
+          </b:if>
+        </span>
+      </b:if>
+
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
+          <b:loop values='data:post.comments' var='comment'>
+            <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+              <b:if cond='data:comment.favicon'>
+                <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
+              </b:if>
+              <a expr:name='data:comment.anchorName'/>
+              <b:if cond='data:blog.enabledCommentProfileImages'>
+                <data:comment.authorAvatarImage/>
+              </b:if>
+              <b:if cond='data:comment.authorUrl'>
+                <a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a>
+              <b:else/>
+                <data:comment.author/>
+              </b:if>
+              <data:commentPostedByMsg/>
+            </dt>
+            <dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'>
+              <b:if cond='data:comment.isDeleted'>
+                <span class='deleted-comment'><data:comment.body/></span>
+              <b:else/>
+                <p>
+                  <data:comment.body/>
+                </p>
+              </b:if>
+            </dd>
+            <dd class='comment-footer'>
+              <span class='comment-timestamp'>
+                <a expr:href='data:comment.url' title='comment permalink'>
+                  <data:comment.timestamp/>
+                </a>
+                <b:include data='comment' name='commentDeleteIcon'/>
+              </span>
+            </dd>
+          </b:loop>
+        </dl>
+      </div>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <span class='paging-control-container'>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+            <data:post.oldestLinkText/>
+          </a>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+            <data:post.olderLinkText/>
+          </a>
+          &#160;
+          <data:post.commentRangeText/>
+          &#160;
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+            <data:post.newerLinkText/>
+          </a>
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+            <data:post.newestLinkText/>
+          </a>
+        </span>
+      </b:if>
+
+      <p class='comment-footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='comment-form'/>
+          <b:else/>
+            <data:post.noNewCommentsText/>
+          </b:if>
+        <b:elseif cond='data:post.allowComments'/>
+          <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+        </b:if>
+      </p>
+    </b:if>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+
+  </div>
+</b:includable>
+              <b:includable id='feedLinks'>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:include cond='data:post.allowComments and data:post.feedLinks' data='post.feedLinks' name='feedLinksBody'/>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+              <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:feedLinksMsg/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+              <b:includable id='iframe_comments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+              <b:includable id='mobile-index-post' var='post'>
+  <div class='mobile-date-outer date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <div class='date-header'>
+        <span><data:post.dateHeader/></span>
+      </div>
+    </b:if>
+
+    <div class='mobile-post-outer'>
+      <a expr:href='data:post.url'>
+        <h3 class='mobile-index-title entry-title' itemprop='name'>
+          <data:post.title/>
+        </h3>
+
+        <div class='mobile-index-arrow'>&amp;rsaquo;</div>
+
+        <div class='mobile-index-contents'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <div class='mobile-index-thumbnail'>
+              <div class='Image'>
+                <img expr:src='data:post.thumbnailUrl'/>
+              </div>
+            </div>
+          </b:if>
+
+          <div class='post-body'>
+            <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+          </div>
+        </div>
+
+        <div style='clear: both;'/>
+      </a>
+
+      <div class='mobile-index-comment'>
+        <b:include cond='data:blog.pageType != &quot;static_page&quot;                          and data:post.allowComments                          and data:post.numComments != 0' data='post' name='comment_count_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+              <b:includable id='mobile-main' var='top'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-index-post'/>
+        </b:loop>
+      <b:else/>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-post'/>
+        </b:loop>
+      </b:if>
+    </div>
+
+   <b:include name='mobile-nextprev'/>
+</b:includable>
+              <b:includable id='mobile-nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
+      </div>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
+      </div>
+    </b:if>
+
+    <div class='mobile-link-button' id='blog-pager-home-link'>
+    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+    </div>
+
+    <div class='mobile-desktop-link'>
+      <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
+    </div>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+              <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+    </b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+          </b:if>
+          <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+          <meta expr:content='data:post.id' itemprop='postId'/>
+
+          <a expr:name='data:post.id'/>
+          <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title' itemprop='name'>
+              <b:if cond='data:post.link'>
+                <a expr:href='data:post.link'><data:post.title/></a>
+              <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
+                <a expr:href='data:post.url'><data:post.title/></a>
+              <b:else/>
+                <data:post.title/>
+              </b:if>
+            </h3>
+          </b:if>
+
+          <div class='post-header'>
+            <div class='post-header-line-1'/>
+          </div>
+
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+            <data:post.body/>
+            <div style='clear: both;'/> <!-- clear for photos floats -->
+          </div>
+
+          <div class='post-footer'>
+            <div class='post-footer-line post-footer-line-1'>
+              <span class='post-author vcard'>
+                <b:if cond='data:top.showAuthor'>
+                  <b:if cond='data:post.authorProfileUrl'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                      <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <span itemprop='name'><data:post.author/></span>
+                      </a>
+                    </span>
+                  <b:else/>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <span itemprop='name'><data:post.author/></span>
+                    </span>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-timestamp'>
+                <b:if cond='data:top.showTimestamp'>
+                  <data:top.timestampLabel/>
+                  <b:if cond='data:post.url'>
+                    <meta expr:content='data:post.url.canonical' itemprop='url'/>
+                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-comment-link'>
+                <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                                  and data:post.allowComments' data='post' name='comment_count_picker'/>
+              </span>
+            </div>
+
+            <div class='post-footer-line post-footer-line-2'>
+              <b:if cond='data:top.showMobileShare'>
+                <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                  <a href='javascript:void(0);'><data:shareMsg/></a>
+                </div>
+              </b:if>
+            </div>
+
+          </div>
+        </div>
+
+        <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+              <b:includable id='nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <span id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+      </span>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <span id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+      </span>
+    </b:if>
+
+    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+
+    <b:if cond='data:mobileLinkUrl'>
+      <div class='blog-mobile-link'>
+        <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a>
+      </div>
+    </b:if>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+              <b:includable id='post' var='post'>
+  <div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+    <b:if cond='data:post.firstImageUrl'>
+      <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
+    </b:if>
+    <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+    <meta expr:content='data:post.id' itemprop='postId'/>
+
+    <a expr:name='data:post.id'/>
+    <b:if cond='data:post.title'>
+      <h3 class='post-title entry-title' itemprop='name'>
+      <b:if cond='data:post.link'>
+        <a expr:href='data:post.link'><data:post.title/></a>
+      <b:else/>
+        <b:if cond='data:post.url'>
+          <b:if cond='data:blog.url != data:post.url'>
+            <a expr:href='data:post.url'><data:post.title/></a>
+          <b:else/>
+            <data:post.title/>
+          </b:if>
+        <b:else/>
+          <data:post.title/>
+        </b:if>
+      </b:if>
+      </h3>
+    </b:if>
+
+    <div class='post-header'>
+    <div class='post-header-line-1'/>
+    </div>
+
+    <b:if cond='data:blog.metaDescription == &quot;&quot;'>
+      <!-- Then use the post body as the schema.org description,
+          for good G+/FB snippeting. -->
+      <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='description articleBody'>
+        <data:post.body/>
+        <div style='clear: both;'/> <!-- clear for photos floats -->
+      </div>
+    <b:else/>
+      <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+        <data:post.body/>
+        <div style='clear: both;'/> <!-- clear for photos floats -->
+      </div>
+    </b:if>
+
+    <b:if cond='data:post.hasJumpLink'>
+      <div class='jump-link'>
+        <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'><data:post.jumpText/></a>
+      </div>
+    </b:if>
+
+    <div class='post-footer'>
+    <div class='post-footer-line post-footer-line-1'><span class='post-icons'>
+        <!-- email post links -->
+        <b:if cond='data:post.emailPostUrl'>
+          <span class='item-action'>
+          <a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'>
+              <img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/>
+          </a>
+          </span>
+        </b:if>
+
+        <!-- quickedit pencil -->
+        <b:include data='post' name='postQuickEdit'/>
+      </span> </div>
+
+      <div class='post-footer-line post-footer-line-2'/>
+
+      <div class='post-footer-line post-footer-line-3'/>
+      <b:if cond='data:post.authorAboutMe'>
+        <div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+          <b:if cond='data:post.authorPhoto.url'>
+            <img expr:src='data:post.authorPhoto.url' itemprop='image' width='50px'/>
+          </b:if>
+          <div>
+            <a class='g-profile' expr:href='data:post.authorProfileUrl' itemprop='url' rel='author' title='author profile'>
+              <span itemprop='name'><data:post.author/></span>
+            </a>
+          </div>
+          <span itemprop='description'><data:post.authorAboutMe/></span>
+        </div>
+      </b:if>
+    </div>
+  </div>
+</b:includable>
+              <b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+      <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
+        <img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+      </a>
+    </span>
+  </b:if>
+</b:includable>
+              <b:includable id='shareButtons' var='post'>
+  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if>
+</b:includable>
+              <b:includable id='status-message'>
+  <b:if cond='data:navMessage'>
+  <div class='status-msg-wrap'>
+    <div class='status-msg-body'>
+      <data:navMessage/>
+    </div>
+    <div class='status-msg-border'>
+      <div class='status-msg-bg'>
+        <div class='status-msg-hidden'><data:navMessage/></div>
+      </div>
+    </div>
+  </div>
+  <div style='clear: both;'/>
+  </b:if>
+</b:includable>
+              <b:includable id='threaded-comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='data:mobile'>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+              <b:includable id='threaded_comment_js' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+
+  <script type='text/javascript'>
+    (function() {
+      var items = <data:post.commentJso/>;
+      var msgs = <data:post.commentMsgs/>;
+      var config = <data:post.commentConfig/>;
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        var text = (entry &&
+                    ((entry.content && entry.content.$t) ||
+                     (entry.summary && entry.summary.$t))) ||
+            '';
+        if (entry && entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + text + '</span>';
+            }
+          }
+        }
+        return text;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/comment/delete/'
+               + config.blogId + '/' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+</b:includable>
+              <b:includable id='threaded_comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <h4><data:post.commentLabelFull/>:</h4>
+
+    <div class='comments-content'>
+      <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threaded-comment-form'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+
+    <div id='backlinks-container'>
+    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+    </div>
+    </div>
+  </div>
+</b:includable>
+            </b:widget>
+          </b:section>
+        </div>
+        </div>
+
+        <div class='column-left-outer'>
+        <div class='column-left-inner'>
+          <aside>
+          <macro:include id='main-column-left-sections' name='sections'>
+            <macro:param default='0' name='num' value='1'/>
+            <macro:param default='sidebar-left' name='idPrefix'/>
+            <macro:param default='sidebar' name='class'/>
+            <macro:param default='true' name='includeBottom'/>
+          </macro:include>
+          </aside>
+        </div>
+        </div>
+
+        <div class='column-right-outer'>
+        <div class='column-right-inner'>
+          <aside>
+          <macro:include id='main-column-right-sections' name='sections'>
+            <macro:param default='2' name='num' value='1'/>
+            <macro:param default='sidebar-right' name='idPrefix'/>
+            <macro:param default='sidebar' name='class'/>
+            <macro:param default='true' name='includeBottom'/>
+          </macro:include>
+          </aside>
+        </div>
+        </div>
+
+        </div>
+
+        <div style='clear: both'/>
+      <!-- columns -->
+      </div>
+
+    <!-- main -->
+    </div>
+    </div>
+    <div class='main-cap-bottom cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+
+    <footer>
+    <div class='footer-outer'>
+    <div class='footer-cap-top cap-top'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    <div class='fauxborder-left footer-fauxborder-left'>
+    <div class='fauxborder-right footer-fauxborder-right'/>
+    <div class='region-inner footer-inner'>
+      <macro:include id='footer-sections' name='sections'>
+        <macro:param default='2' name='num' value='1'/>
+        <macro:param default='footer' name='idPrefix'/>
+        <macro:param default='foot' name='class'/>
+        <macro:param default='false' name='includeBottom'/>
+      </macro:include>
+      <!-- outside of the include in order to lock Attribution widget -->
+      <b:section class='foot' id='footer-3' name='Footer' showaddelement='no'>
+        <b:widget id='Attribution1' locked='true' title='' type='Attribution'>
+          <b:widget-settings>
+            <b:widget-setting name='copyright'/>
+          </b:widget-settings>
+          <b:includable id='main'>
+    <div class='widget-content' style='text-align: center;'>
+      <b:if cond='data:attribution != &quot;&quot;'>
+       <data:attribution/>
+      </b:if>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+        </b:widget>
+      </b:section>
+    </div>
+    </div>
+    <div class='footer-cap-bottom cap-bottom'>
+      <div class='cap-left'/>
+      <div class='cap-right'/>
+    </div>
+    </div>
+    </footer>
+
+  <!-- content -->
+  </div>
+  </div>
+  <div class='content-cap-bottom cap-bottom'>
+    <div class='cap-left'/>
+    <div class='cap-right'/>
+  </div>
+  </div>
+  </div>
+
+  <script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
+      }, 10);
+  </script>
+</body>
+
+<macro:includable id='sections' var='col'>
+  <macro:if cond='data:col.num == 0'>
+  <macro:else/>
+    <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
+
+    <macro:if cond='data:col.num &gt;= 2'>
+      <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
+      <tbody>
+      <tr>
+        <td class='first columns-cell'>
+          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
+        </td>
+
+        <td class='columns-cell'>
+          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
+        </td>
+
+        <macro:if cond='data:col.num &gt;= 3'>
+          <td class='columns-cell'>
+            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
+          </td>
+        </macro:if>
+
+        <macro:if cond='data:col.num &gt;= 4'>
+          <td class='columns-cell'>
+            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
+          </td>
+        </macro:if>
+      </tr>
+      </tbody>
+      </table>
+
+      <macro:if cond='data:col.includeBottom'>
+        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
+      </macro:if>
+    </macro:if>
+  </macro:if>
+</macro:includable>
+
+<b:section-contents id='sidebar-left-1'/><b:section-contents id='sidebar-right-1'/><b:section-contents id='footer-1'/></html>
