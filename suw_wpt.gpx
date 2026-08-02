@@ -1,0 +1,62 @@
+  </wpt>
+  <wpt lat="55.007787" lon="-4.780994">      <!-- a WAYPOINT: one named place -->
+    <name>Beehive Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+   <wpt lat="55.0780" lon="-4.5090">      <!-- a WAYPOINT: one named place -->
+    <name>Caldons Campsite Glen Trool</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+   </wpt>
+   <wpt lat="55.06821" lon="-4.40382">      <!-- a WAYPOINT: one named place -->
+    <name>White Laggan Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.106" lon="-4.165">      <!-- a WAYPOINT: one named place -->
+    <name>St John's Town of Dalry Hotel</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.29341" lon="-4.07171">      <!-- a WAYPOINT: one named place -->
+    <name>Chalk Memorial Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.368" lon="-3.9258">      <!-- a WAYPOINT: one named place -->
+    <name>Sanquhar Campsite</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.397725" lon="-3.779774">      <!-- a WAYPOINT: one named place -->
+    <name>Wanlockhead SYHA</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+ </wpt>
+  <wpt lat="55.34625" lon="-3.55320">      <!-- a WAYPOINT: one named place -->
+    <name>Brattleburn Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.362056" lon="-3.29259">      <!-- a WAYPOINT: one named place -->
+    <name>Over Phawhope Bothy</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.47353" lon="-3.20165">      <!-- a WAYPOINT: one named place -->
+    <name>Tibbie Shiels Inn Camping</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.5925" lon="-3.0567">      <!-- a WAYPOINT: one named place -->
+    <name>Minch Moor Bothy near Traquai</name>  <!-- https://commons.wikimedia.org/wiki/File:Minch_Moor_Bothy_(6902141619).jpg -->
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.59778" lon="-2.71722">      <!-- a WAYPOINT: one named place -->
+    <name>Melrose SYHA</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.7196" lon="-2.7491">      <!-- a WAYPOINT: one named place -->
+    <name>Lauder Campsite</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.80774" lon="-2.49210">      <!-- a WAYPOINT: one named place -->
+    <name>Longformacus Pickup</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
+  <wpt lat="55.9324" lon="-2.3625">      <!-- a WAYPOINT: one named place -->
+    <name>Cockburnspath the END</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
+  </wpt>
