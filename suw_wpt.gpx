@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="AI Assistant" xmlns="http://topografix.com">
+  <metadata>
+    <name>Southern Upland Way Waypoints</name>
+    <desc>A clean list of waypoints along the route including bothies and campsites.</desc>
+  </metadata>
+  <wpt lat="54.8450" lon="-5.1243">      <!-- a WAYPOINT: one named place -->
+    <name>START Portpatrick Hotel</name>
+    <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.007787" lon="-4.780994">      <!-- a WAYPOINT: one named place -->
     <name>Beehive Bothy</name>
@@ -27,7 +36,6 @@
     <name>Wanlockhead SYHA</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
- </wpt>
   <wpt lat="55.34625" lon="-3.55320">      <!-- a WAYPOINT: one named place -->
     <name>Brattleburn Bothy</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
@@ -60,3 +68,4 @@
     <name>Cockburnspath the END</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+</gpx>
