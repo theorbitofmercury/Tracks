@@ -7,7 +7,6 @@
   </link>
   <desc>333.8 km Hike. Walked by Mike, Veronica &amp; Hannah...</desc>
 </metadata>
-<trk>
   <name>1997-07 Southern Uplands Way</name>
   <wpt lat="54.8450" lon="-5.1243">      <!-- a WAYPOINT: one named place -->
     <name>START Portpatrick Hotel</name>
@@ -74,6 +73,7 @@
     <name>Cockburnspath the END</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
+<trk>
   <trkseg>
     <trkpt lat="54.841573974" lon="-5.11677403">
       <ele>5.7</ele>
