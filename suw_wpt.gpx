@@ -8,8 +8,8 @@
     <name>START Portpatrick Hotel</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
-  <wpt lat="54.90723," lon="-4.94892">      <!-- a WAYPOINT: one named place -->
-    <name>Castle Kennedy-Camping/name>
+  <wpt lat="54.90723" lon="-4.94892">      <!-- a WAYPOINT: one named place -->
+    <name>Castle Kennedy-Camping</name>
     <sym>Flag</sym> <!-- Displays a flag icon -->
   </wpt>
   <wpt lat="55.007787" lon="-4.780994">      <!-- a WAYPOINT: one named place -->
