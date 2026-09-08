@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Michael Webb">
+  <metadata>
+    <name>All_wpt</name>
+  </metadata>
+  <wpt lat="52.3005275" lon="-1.9302464">
+    <ele>0</ele>
+    <name>Start-Redditch</name>
+  </wpt>
+  <wpt lat="52.274355" lon="-1.8947983">
+    <ele>0</ele>
+    <name>Studley</name>
+  </wpt>
+  <wpt lat="51.8442625" lon="-1.3465118">
+    <ele>0</ele>
+    <name>Woodstock</name>
+  </wpt>
+  <wpt lat="51.4026327" lon="0.4188538">
+    <ele>0</ele>
+    <name>A2</name>
+  </wpt>
+  <wpt lat="51.1250747" lon="1.3279724">
+    <ele>0</ele>
+    <name>Dover</name>
+  </wpt>
+  <wpt lat="50.9636165" lon="1.8470764">
+    <ele>0</ele>
+    <name>Calais</name>
+  </wpt>
+  <wpt lat="48.5766071" lon="7.8044128">
+    <ele>0</ele>
+    <name>Strasbourg</name>
+  </wpt>
+  <wpt lat="48.7362668" lon="9.0444946">
+    <ele>0</ele>
+    <name>Stuttgart</name>
+  </wpt>
+  <wpt lat="48.2063713" lon="11.46698">
+    <ele>0</ele>
+    <name>Munich</name>
+  </wpt>
+  <wpt lat="47.8325178" lon="13.0503845">
+    <ele>0</ele>
+    <name>Salzburg</name>
+  </wpt>
+  <wpt lat="47.7171536" lon="13.6278534">
+    <ele>0</ele>
+    <name>Bad Ischl</name>
+  </wpt>
+  <wpt lat="47.0551541" lon="15.3767395">
+    <ele>0</ele>
+    <name>Graz</name>
+  </wpt>
+  <wpt lat="45.763691" lon="15.8917236">
+    <ele>0</ele>
+    <name>Zagreb</name>
+  </wpt>
+  <wpt lat="46.084716" lon="14.479967">
+    <ele>0</ele>
+    <name>Ljubljana?</name>
+  </wpt>
+  <wpt lat="44.8071366" lon="20.4565422">
+    <ele>0</ele>
+    <name>Belgrade</name>
+  </wpt>
+  <wpt lat="42.7389438" lon="23.2443237">
+    <ele>0</ele>
+    <name>Sofia</name>
+  </wpt>
+  <wpt lat="41.7218743" lon="26.3465881">
+    <ele>0</ele>
+    <name>Border Bulgaria/Turkey</name>
+  </wpt>
+  <wpt lat="41.6759891" lon="26.5340424">
+    <ele>0</ele>
+    <name>Edirne</name>
+  </wpt>
+  <wpt lat="41.0420738" lon="28.9324951">
+    <ele>0</ele>
+    <name>Istanbul</name>
+  </wpt>
+  <wpt lat="39.9644907" lon="32.8436279">
+    <ele>0</ele>
+    <name>Ankara</name>
+  </wpt>
+  <wpt lat="39.913423" lon="41.2708282">
+    <ele>0</ele>
+    <name>Erzurum</name>
+  </wpt>
+  <wpt lat="39.4128551" lon="44.3751526">
+    <ele>0</ele>
+    <name>Border Turkey/Iran</name>
+  </wpt>
+  <wpt lat="38.0266327" lon="46.2085181">
+    <ele>0</ele>
+    <name>Tabriz</name>
+  </wpt>
+  <wpt lat="35.6907892" lon="51.2539581">
+    <ele>0</ele>
+    <name>Tehran</name>
+  </wpt>
+  <wpt lat="40.7430494" lon="36.4415573">
+    <ele>0</ele>
+    <name>Erbaa?</name>
+  </wpt>
+  <wpt lat="36.2952045" lon="59.6214294">
+    <ele>0</ele>
+    <name>Mashhad</name>
+  </wpt>
+  <wpt lat="34.384246" lon="62.1908569">
+    <ele>0</ele>
+    <name>Herat</name>
+  </wpt>
+  <wpt lat="31.625909" lon="65.692063">
+    <ele>0</ele>
+    <name>Kandahar</name>
+  </wpt>
+  <wpt lat="34.5348437" lon="69.1548157">
+    <ele>0</ele>
+    <name>Kabul</name>
+  </wpt>
+  <wpt lat="34.456748" lon="70.4621887">
+    <ele>0</ele>
+    <name>Jalalabad</name>
+  </wpt>
+  <wpt lat="34.1268686" lon="71.0925293">
+    <ele>0</ele>
+    <name>Torkham</name>
+  </wpt>
+  <wpt lat="34.7100092" lon="61.0070801">
+    <ele>0</ele>
+    <name>Border Iran/Afghanistan</name>
+  </wpt>
+  <wpt lat="34.0153882" lon="71.5412521">
+    <ele>0</ele>
+    <name>Pershawar</name>
+  </wpt>
+  <wpt lat="31.5504527" lon="74.3170166">
+    <ele>0</ele>
+    <name>Lahore</name>
+  </wpt>
+  <wpt lat="31.4116703" lon="74.6033478">
+    <ele>0</ele>
+    <name>End-India</name>
+  </wpt>
+  <wpt lat="41.9679145" lon="27.4582672">
+    <ele>0</ele>
+    <name>Border Turkey/Bulgaria?</name>
+  </wpt>
+  <wpt lat="42.5551035" lon="27.4850464">
+    <ele>0</ele>
+    <name>Burgas</name>
+  </wpt>
+  <wpt lat="42.6925457" lon="27.795428">
+    <ele>0</ele>
+    <name>Sunny Beach</name>
+  </wpt>
+  <wpt lat="48.8502582" lon="2.3455811">
+    <ele>0</ele>
+    <name>Paris</name>
+  </wpt>
+  <wpt lat="52.30897" lon="-1.940936">
+    <ele>127.12</ele>
+    <name>Redditch, UK</name>
+  </wpt>
+  <wpt lat="48.573405" lon="7.752111">
+    <ele>150.13</ele>
+    <name>Strasbourg</name>
+  </wpt>
+  <wpt lat="47.070714" lon="15.439504">
+    <ele>350.12</ele>
+    <name>Graz, Austria</name>
+  </wpt>
+  <wpt lat="31.628871" lon="65.737175">
+    <ele>1014.08</ele>
+    <name>Kandahar, Afghanistan</name>
+  </wpt>
+  <wpt lat="34.555349" lon="69.207486">
+    <ele>1791.58</ele>
+    <name>Kabul, Afghanistan</name>
+  </wpt>
+  <wpt lat="31.594527" lon="74.476761">
+    <ele>221.33</ele>
+    <name>Grand Trunk Rd, Lahore, Punjab, Pakistan</name>
+  </wpt>
+</gpx>
+
