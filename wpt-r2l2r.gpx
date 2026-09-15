@@ -1,82 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="Michael Webb">
+<gpx version="1.1" creator="Michael Webb" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.garmin.com/xmlschemas/GpxExtensions/v3 http://www.garmin.com/xmlschemas/GpxExtensionsv3.xsd http://www.garmin.com/xmlschemas/TrackPointExtension/v1 http://www.garmin.com/xmlschemas/TrackPointExtensionv1.xsd http://www.garmin.com/xmlschemas/PowerExtension/v1 http://www.garmin.com/xmlschemas/PowerExtensionv1.xsd http://www.topografix.com/GPX/gpx_style/0/2 http://www.topografix.com/GPX/gpx_style/0/2/gpx_style.xsd" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:gpxpx="http://www.garmin.com/xmlschemas/PowerExtension/v1" xmlns:gpx_style="http://www.topografix.com/GPX/gpx_style/0/2">
   <metadata>
     <name>All_way_points</name>
+    <author>
+      <name>gpx.studio</name>
+      <link href="https://gpx.studio"/>
+    </author>
   </metadata>
   <wpt lat="52.3005275" lon="-1.9302464">
-    <ele>0</ele>
+    <ele>101</ele>
     <name>Start-Redditch</name>
   </wpt>
   <wpt lat="52.274355" lon="-1.8947983">
-    <ele>0</ele>
+    <ele>70</ele>
     <name>Studley</name>
   </wpt>
   <wpt lat="51.8442625" lon="-1.3465118">
-    <ele>0</ele>
+    <ele>84</ele>
     <name>Woodstock</name>
   </wpt>
   <wpt lat="51.4026327" lon="0.4188538">
-    <ele>0</ele>
+    <ele>110</ele>
     <name>A2</name>
   </wpt>
-  <wpt lat="51.1250747" lon="1.3279724">
-    <ele>0</ele>
-    <name>Dover</name>
-  </wpt>
+    <wpt lat="51.1250747" lon="1.3279724">
+     <ele>5</ele>
+  <name>White Cliffs of Dover</name>
+  <link href="https://photos.fife.usercontent.google.com/pw/AP1GczMrHKDmqdz8H-TyeFhvjPqboXEp41gt1TU5KFIQa3B1yb-I2VBC5tRkhA=w1091-h818-s-no?authuser=0">
+    <text>Waypoint Photo</text>
+    <type>image/jpeg</type>
+		</link>
+   </wpt>
   <wpt lat="50.9636165" lon="1.8470764">
-    <ele>0</ele>
+    <ele>10</ele>
     <name>Calais</name>
   </wpt>
   <wpt lat="48.5766071" lon="7.8044128">
-    <ele>0</ele>
+    <ele>141</ele>
     <name>Strasbourg</name>
   </wpt>
   <wpt lat="48.7362668" lon="9.0444946">
-    <ele>0</ele>
+    <ele>535</ele>
     <name>Stuttgart</name>
   </wpt>
   <wpt lat="48.2063713" lon="11.46698">
-    <ele>0</ele>
+    <ele>517</ele>
     <name>Munich</name>
   </wpt>
   <wpt lat="47.8325178" lon="13.0503845">
-    <ele>0</ele>
+    <ele>504</ele>
     <name>Salzburg</name>
   </wpt>
   <wpt lat="47.7171536" lon="13.6278534">
-    <ele>0</ele>
+    <ele>505</ele>
     <name>Bad Ischl</name>
   </wpt>
   <wpt lat="47.0551541" lon="15.3767395">
-    <ele>0</ele>
+    <ele>516</ele>
     <name>Graz</name>
   </wpt>
   <wpt lat="45.763691" lon="15.8917236">
-    <ele>0</ele>
+    <ele>119</ele>
     <name>Zagreb</name>
   </wpt>
   <wpt lat="46.084716" lon="14.479967">
-    <ele>0</ele>
+    <ele>311</ele>
     <name>Ljubljana?</name>
   </wpt>
   <wpt lat="44.8071366" lon="20.4565422">
-    <ele>0</ele>
+    <ele>77</ele>
     <name>Belgrade</name>
   </wpt>
   <wpt lat="42.7389438" lon="23.2443237">
-    <ele>0</ele>
+    <ele>547</ele>
     <name>Sofia</name>
   </wpt>
   <wpt lat="41.7218743" lon="26.3465881">
-    <ele>0</ele>
+    <ele>54</ele>
     <name>Border Bulgaria/Turkey</name>
   </wpt>
   <wpt lat="41.6759891" lon="26.5340424">
-    <ele>0</ele>
+    <ele>35</ele>
     <name>Edirne</name>
   </wpt>
   <wpt lat="41.0420738" lon="28.9324951">
-    <ele>0</ele>
+    <ele>42</ele>
     <name>Istanbul</name>
   </wpt>
   <wpt lat="39.9644907" lon="32.8436279">
@@ -184,4 +192,3 @@
     <name>Grand Trunk Rd, Lahore, Punjab, Pakistan</name>
   </wpt>
 </gpx>
-
